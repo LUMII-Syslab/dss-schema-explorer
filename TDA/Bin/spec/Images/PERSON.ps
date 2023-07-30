@@ -1,0 +1,551 @@
+%!PS-Adobe-3.0
+%%Creator: (ImageMagick)
+%%Title: (PERSON.ps)
+%%CreationDate: (Sat Jan 10 11:02:24 2009)
+%%BoundingBox: 0 0 24 20
+%%HiResBoundingBox: 0 0 24 20
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 1
+%%Orientation: Portrait
+%%PageOrder: Ascend
+%%Pages: 1
+%%EndComments
+
+%%BeginDefaults
+%%EndDefaults
+
+%%BeginProlog
+%
+% Display a color image.  The image is displayed in color on
+% Postscript viewers or printers that support color, otherwise
+% it is displayed as grayscale.
+%
+/DirectClassPacket
+{
+  %
+  % Get a DirectClass packet.
+  %
+  % Parameters:
+  %   red.
+  %   green.
+  %   blue.
+  %   length: number of pixels minus one of this color (optional).
+  %
+  currentfile color_packet readhexstring pop pop
+  compression 0 eq
+  {
+    /number_pixels 3 def
+  }
+  {
+    currentfile byte readhexstring pop 0 get
+    /number_pixels exch 1 add 3 mul def
+  } ifelse
+  0 3 number_pixels 1 sub
+  {
+    pixels exch color_packet putinterval
+  } for
+  pixels 0 number_pixels getinterval
+} bind def
+
+/DirectClassImage
+{
+  %
+  % Display a DirectClass image.
+  %
+  systemdict /colorimage known
+  {
+    columns rows 8
+    [
+      columns 0 0
+      rows neg 0 rows
+    ]
+    { DirectClassPacket } false 3 colorimage
+  }
+  {
+    %
+    % No colorimage operator;  convert to grayscale.
+    %
+    columns rows 8
+    [
+      columns 0 0
+      rows neg 0 rows
+    ]
+    { GrayDirectClassPacket } image
+  } ifelse
+} bind def
+
+/GrayDirectClassPacket
+{
+  %
+  % Get a DirectClass packet;  convert to grayscale.
+  %
+  % Parameters:
+  %   red
+  %   green
+  %   blue
+  %   length: number of pixels minus one of this color (optional).
+  %
+  currentfile color_packet readhexstring pop pop
+  color_packet 0 get 0.299 mul
+  color_packet 1 get 0.587 mul add
+  color_packet 2 get 0.114 mul add
+  cvi
+  /gray_packet exch def
+  compression 0 eq
+  {
+    /number_pixels 1 def
+  }
+  {
+    currentfile byte readhexstring pop 0 get
+    /number_pixels exch 1 add def
+  } ifelse
+  0 1 number_pixels 1 sub
+  {
+    pixels exch gray_packet put
+  } for
+  pixels 0 number_pixels getinterval
+} bind def
+
+/GrayPseudoClassPacket
+{
+  %
+  % Get a PseudoClass packet;  convert to grayscale.
+  %
+  % Parameters:
+  %   index: index into the colormap.
+  %   length: number of pixels minus one of this color (optional).
+  %
+  currentfile byte readhexstring pop 0 get
+  /offset exch 3 mul def
+  /color_packet colormap offset 3 getinterval def
+  color_packet 0 get 0.299 mul
+  color_packet 1 get 0.587 mul add
+  color_packet 2 get 0.114 mul add
+  cvi
+  /gray_packet exch def
+  compression 0 eq
+  {
+    /number_pixels 1 def
+  }
+  {
+    currentfile byte readhexstring pop 0 get
+    /number_pixels exch 1 add def
+  } ifelse
+  0 1 number_pixels 1 sub
+  {
+    pixels exch gray_packet put
+  } for
+  pixels 0 number_pixels getinterval
+} bind def
+
+/PseudoClassPacket
+{
+  %
+  % Get a PseudoClass packet.
+  %
+  % Parameters:
+  %   index: index into the colormap.
+  %   length: number of pixels minus one of this color (optional).
+  %
+  currentfile byte readhexstring pop 0 get
+  /offset exch 3 mul def
+  /color_packet colormap offset 3 getinterval def
+  compression 0 eq
+  {
+    /number_pixels 3 def
+  }
+  {
+    currentfile byte readhexstring pop 0 get
+    /number_pixels exch 1 add 3 mul def
+  } ifelse
+  0 3 number_pixels 1 sub
+  {
+    pixels exch color_packet putinterval
+  } for
+  pixels 0 number_pixels getinterval
+} bind def
+
+/PseudoClassImage
+{
+  %
+  % Display a PseudoClass image.
+  %
+  % Parameters:
+  %   class: 0-PseudoClass or 1-Grayscale.
+  %
+  currentfile buffer readline pop
+  token pop /class exch def pop
+  class 0 gt
+  {
+    currentfile buffer readline pop
+    token pop /depth exch def pop
+    /grays columns 8 add depth sub depth mul 8 idiv string def
+    columns rows depth
+    [
+      columns 0 0
+      rows neg 0 rows
+    ]
+    { currentfile grays readhexstring pop } image
+  }
+  {
+    %
+    % Parameters:
+    %   colors: number of colors in the colormap.
+    %   colormap: red, green, blue color packets.
+    %
+    currentfile buffer readline pop
+    token pop /colors exch def pop
+    /colors colors 3 mul def
+    /colormap colors string def
+    currentfile colormap readhexstring pop pop
+    systemdict /colorimage known
+    {
+      columns rows 8
+      [
+        columns 0 0
+        rows neg 0 rows
+      ]
+      { PseudoClassPacket } false 3 colorimage
+    }
+    {
+      %
+      % No colorimage operator;  convert to grayscale.
+      %
+      columns rows 8
+      [
+        columns 0 0
+        rows neg 0 rows
+      ]
+      { GrayPseudoClassPacket } image
+    } ifelse
+  } ifelse
+} bind def
+
+/DisplayImage
+{
+  %
+  % Display a DirectClass or PseudoClass image.
+  %
+  % Parameters:
+  %   x & y translation.
+  %   x & y scale.
+  %   label pointsize.
+  %   image label.
+  %   image columns & rows.
+  %   class: 0-DirectClass or 1-PseudoClass.
+  %   compression: 0-none or 1-RunlengthEncoded.
+  %   hex color packets.
+  %
+  gsave
+  /buffer 512 string def
+  /byte 1 string def
+  /color_packet 3 string def
+  /pixels 768 string def
+
+  currentfile buffer readline pop
+  token pop /x exch def
+  token pop /y exch def pop
+  x y translate
+  currentfile buffer readline pop
+  token pop /x exch def
+  token pop /y exch def pop
+  currentfile buffer readline pop
+  token pop /pointsize exch def pop
+  /Times-Roman findfont pointsize scalefont setfont
+  x y scale
+  currentfile buffer readline pop
+  token pop /columns exch def
+  token pop /rows exch def pop
+  currentfile buffer readline pop
+  token pop /class exch def pop
+  currentfile buffer readline pop
+  token pop /compression exch def pop
+  class 0 gt { PseudoClassImage } { DirectClassImage } ifelse
+  grestore
+  showpage
+} bind def
+%%EndProlog
+%%Page:  1 1
+%%PageBoundingBox: 0 0 24 20
+DisplayImage
+0 0
+24 20
+12.000000
+24 20
+1
+0
+0
+256
+000000
+800000
+008000
+808000
+000080
+800080
+008080
+C0C0C0
+C0DCC0
+A6CAF0
+402000
+602000
+802000
+A02000
+C02000
+E02000
+004000
+204000
+404000
+604000
+804000
+A04000
+C04000
+E04000
+006000
+206000
+406000
+606000
+806000
+A06000
+C06000
+E06000
+008000
+208000
+408000
+608000
+808000
+A08000
+C08000
+E08000
+00A000
+20A000
+40A000
+60A000
+80A000
+A0A000
+C0A000
+E0A000
+00C000
+20C000
+40C000
+60C000
+80C000
+A0C000
+C0C000
+E0C000
+00E000
+20E000
+40E000
+60E000
+80E000
+A0E000
+C0E000
+E0E000
+000040
+200040
+400040
+600040
+800040
+A00040
+C00040
+E00040
+002040
+202040
+402040
+602040
+802040
+A02040
+C02040
+E02040
+004040
+204040
+404040
+604040
+804040
+A04040
+C04040
+E04040
+006040
+206040
+406040
+606040
+806040
+A06040
+C06040
+E06040
+008040
+208040
+408040
+608040
+808040
+A08040
+C08040
+E08040
+00A040
+20A040
+40A040
+60A040
+80A040
+A0A040
+C0A040
+E0A040
+00C040
+20C040
+40C040
+60C040
+80C040
+A0C040
+C0C040
+E0C040
+00E040
+20E040
+40E040
+60E040
+80E040
+A0E040
+C0E040
+E0E040
+000080
+200080
+400080
+600080
+800080
+A00080
+C00080
+E00080
+002080
+202080
+402080
+602080
+802080
+A02080
+C02080
+E02080
+004080
+204080
+404080
+604080
+804080
+A04080
+C04080
+E04080
+006080
+206080
+406080
+606080
+806080
+A06080
+C06080
+E06080
+008080
+208080
+408080
+608080
+808080
+A08080
+C08080
+E08080
+00A080
+20A080
+40A080
+60A080
+80A080
+A0A080
+C0A080
+E0A080
+00C080
+20C080
+40C080
+60C080
+80C080
+A0C080
+C0C080
+E0C080
+00E080
+20E080
+40E080
+60E080
+80E080
+A0E080
+C0E080
+E0E080
+0000C0
+2000C0
+4000C0
+6000C0
+8000C0
+A000C0
+C000C0
+E000C0
+0020C0
+2020C0
+4020C0
+6020C0
+8020C0
+A020C0
+C020C0
+E020C0
+0040C0
+2040C0
+4040C0
+6040C0
+8040C0
+A040C0
+C040C0
+E040C0
+0060C0
+2060C0
+4060C0
+6060C0
+8060C0
+A060C0
+C060C0
+E060C0
+0080C0
+2080C0
+4080C0
+6080C0
+8080C0
+A080C0
+C080C0
+E080C0
+00A0C0
+20A0C0
+40A0C0
+60A0C0
+80A0C0
+A0A0C0
+C0A0C0
+E0A0C0
+00C0C0
+20C0C0
+40C0C0
+60C0C0
+80C0C0
+A0C0C0
+FFFBF0
+A0A0A4
+808080
+FF0000
+00FF00
+FFFF00
+0000FF
+FF00FF
+00FFFF
+FFFFFF
+070707070707070707070707070707070707070707070707070707070707070707070707
+070707070707070707070707070707070707070707070707070707070707070707070707
+07070707070707070707A404A407070707070707070707070707070707070707070704FF
+040707070707070707070707070707070707070707070404040707070707070707070707
+07070707070707070707E304E307070707070707070707070707070707070707070404FF
+0404070707070707070707070707070707070707E30404E30404E3070707070707070707
+070707070707070704E3040404E304070707070707070707070707070707070704070404
+040704070707070707070707070707070707070704070404040704070707070707070707
+07070707070707FFA40704040407A4FF0707070707070707070707070707070707070407
+040707070707070707070707070707070707070707070407040707070707070707070707
+070707070707070707070407040707070707070707070707070707070707070707040407
+040407070707070707070707070707070707070707070707070707070707070707070707
+070707070707070707070707070707070707070707070707070707070707070707070707
+070707070707070707070707
+%%PageTrailer
+%%Trailer
+%%EOF

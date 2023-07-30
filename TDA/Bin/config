@@ -1,0 +1,32 @@
+-- Config properties for TDA
+{
+	-- "Show" menu is shown in the TDA Framework main form; default = false
+	show_show_menu = true,
+
+	-- show a dialog box about performed migrations and create a backup copy of the project; default = false
+	show_migration_ui = false,
+
+	-- is autosave enabled? default = true
+	autosave_enabled = false,
+
+	-- number of autosaves that are stored; default = 10
+	autosave_number_of_versions_to_store = 15,
+
+	-- autosave "sleep" interval in seconds; default = 180
+	autosave_sleep_interval = 10,
+
+	-- a font size for dialog windows created by Dialog Engine
+	dialog_font_size = 8,
+
+	-- MII_REP.DLL should use GZIP when saving (priority over ZIP, see below); default = true
+	gzip = true,
+
+	-- MII_REP.DLL should use ZIP when saving; default = true
+	zip = true,
+
+	-- by default copy limit is infinity
+	copy_limit = math.huge,
+
+	-- by default configurator is not hidden
+	is_configurator_hidden = false,
+}
