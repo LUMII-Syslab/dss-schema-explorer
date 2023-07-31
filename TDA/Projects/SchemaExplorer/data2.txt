@@ -1,0 +1,17 @@
+type;c1;c2;aa
+Gen;3;13
+Gen;6;11
+Gen;7;13
+Gen;9;10
+Gen;10;14
+Gen;15;14
+Gen;16;10
+Assoc;11;15;:student
+Assoc;11;13;:course
+Assoc;14;5;:nationality
+Assoc;15;11;:r
+Assoc;15;13;:takes
+Assoc;15;8;:enrolled
+Assoc;10;13;:teaches
+Assoc;10;12;:facultyLevel
+Assoc;8;13;:includes

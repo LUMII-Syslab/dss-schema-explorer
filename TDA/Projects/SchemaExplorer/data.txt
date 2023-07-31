@@ -1,0 +1,14 @@
+id;name;cnt;data_prop;obj_prop;aa;aa2
+11;:Registration;14;3;3;:datePaid##:dateCompleted##:mark;:student##:course##rdf:type
+14;:Person;10;7;7;:salary##:personName##:studentNumber##:personID##:studentName##:teacherName##:hasMark;rdf:type##:takes##:facultyLevel##:r##:nationality##:enrolled##:teaches
+6;:CompletedRegistration;10;3;3;:datePaid##:dateCompleted##:mark;:student##:course##rdf:type
+5;:Nationality;7;2;1;:nValue##:nCode;rdf:type
+15;:Student;7;5;5;:personName##:studentNumber##:personID##:studentName##:hasMark;rdf:type##:takes##:r##:nationality##:enrolled
+13;:Course;5;4;1;:courseName##:courseExtInfo##:courseCode##:courseCredits;rdf:type
+3;:OptionalCourse;3;4;1;:courseName##:courseExtInfo##:courseCode##:courseCredits;rdf:type
+12;:FacultyLevel;3;1;1;:acadTitle;rdf:type
+10;:Teacher;3;4;4;:salary##:personName##:personID##:teacherName;:teaches##:nationality##:facultyLevel##rdf:type
+7;:MandatoryCourse;2;4;1;:courseName##:courseExtInfo##:courseCode##:courseCredits;rdf:type
+8;:AcademicProgram;2;1;2;:programName;:includes##rdf:type
+9;:Professor;2;4;4;:salary##:personName##:personID##:teacherName;:teaches##:nationality##:facultyLevel##rdf:type
+16;:Assistant;1;4;3;:teacherName##:personID##:personName##:salary;:teaches##:facultyLevel##rdf:type
