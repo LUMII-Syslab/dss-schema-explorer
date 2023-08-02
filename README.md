@@ -1,6 +1,6 @@
 # DSS-schema-explorer
 
-The `Schema Explorer`` allows you to get a visual representation of the DSS schema.
+The `DSS Schema Explorer` allows you to get a visual representation of a [DSS](https://github.com/LUMII-Syslab/data-shape-server) schema.
 
 ## Acknowledgements
 
