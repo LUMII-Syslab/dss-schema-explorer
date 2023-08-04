@@ -8,6 +8,10 @@ The **SchemaExplorer** module (as a project under the **TDA tool**) has been dev
 
 The **TDA tool** has been developed at Institute of Mathematics and Computer Science, University of Latvia, https://lumii.lv.
 
+## Examples
+
+Some [schema visualization examples](https://viziquer.lumii.lv/projects/lzp_2021/VisualSchemaSamples.pdf) are available from the [ViziQuer tool](https://viziquer.lumii.lv) site.
+
 ## Installation
 
 1. Perform `git clone`for this repository.
