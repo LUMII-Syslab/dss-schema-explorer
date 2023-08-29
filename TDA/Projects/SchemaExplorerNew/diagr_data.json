@@ -1,0 +1,834 @@
+{
+    "classes": {
+        "c_1": {
+            "id": 1,
+            "super_classes": [],
+            "sub_classes": [],
+            "used": true,
+            "isAbstract": false,
+            "prexif": "dbo",
+            "display_name": "University",
+            "cnt": "341",
+            "cnt0": 341,
+            "fullName": "dbo:University (341)",
+            "data_prop": "1",
+            "object_prop": "3",
+            "atr_list": [
+                "rdfs:label"
+            ],
+            "atr_string": "rdfs:label",
+            "sub_classes_string": ""
+        },
+        "c_3": {
+            "id": 3,
+            "super_classes": [],
+            "sub_classes": [],
+            "used": true,
+            "isAbstract": false,
+            "prexif": "dbo",
+            "display_name": "Award",
+            "cnt": "1.60K",
+            "cnt0": 1596,
+            "fullName": "dbo:Award (1.60K)",
+            "data_prop": "6",
+            "object_prop": "6",
+            "atr_list": [
+                ":category",
+                ":motivation",
+                ":year",
+                "rdfs:label"
+            ],
+            "atr_string": ":category\n:motivation\n:year\nrdfs:label",
+            "sub_classes_string": ""
+        },
+        "c_4": {
+            "id": 4,
+            "super_classes": [],
+            "sub_classes": [],
+            "used": true,
+            "isAbstract": false,
+            "prexif": "",
+            "display_name": "Laureate",
+            "cnt": "976",
+            "cnt0": 976,
+            "fullName": ":Laureate (976)",
+            "data_prop": "10",
+            "object_prop": "8",
+            "atr_list": [
+                "foaf:name",
+                "rdfs:label"
+            ],
+            "atr_string": "foaf:name\nrdfs:label",
+            "sub_classes_string": ""
+        },
+        "c_5": {
+            "id": 5,
+            "super_classes": [
+                "c_4"
+            ],
+            "sub_classes": [
+                {
+                    "id": 30,
+                    "super_classes": [
+                        "c_5"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": null,
+                    "display_name": "male",
+                    "cnt": "889",
+                    "cnt0": 889,
+                    "fullName": "null:male (889)",
+                    "data_prop": "8",
+                    "object_prop": "7",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                },
+                {
+                    "id": 29,
+                    "super_classes": [
+                        "c_5"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": null,
+                    "display_name": "female",
+                    "cnt": "60",
+                    "cnt0": 60,
+                    "fullName": "null:female (60)",
+                    "data_prop": "8",
+                    "object_prop": "7",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                }
+            ],
+            "used": true,
+            "isAbstract": false,
+            "prexif": "foaf",
+            "display_name": "Person",
+            "cnt": "949",
+            "cnt0": 949,
+            "fullName": "foaf:Person (949)",
+            "data_prop": "8",
+            "object_prop": "7",
+            "atr_list": [
+                "dbp:dateOfBirth",
+                "dbp:dateOfDeath",
+                "foaf:birthday",
+                "foaf:familyName",
+                "foaf:gender",
+                "foaf:givenName"
+            ],
+            "atr_string": "dbp:dateOfBirth\ndbp:dateOfDeath\nfoaf:birthday\nfoaf:familyName\nfoaf:gender\nfoaf:givenName",
+            "sub_classes_string": "null:male (889)\nnull:female (60)"
+        },
+        "c_6": {
+            "id": 6,
+            "super_classes": [
+                "c_6_9"
+            ],
+            "sub_classes": [],
+            "used": true,
+            "isAbstract": false,
+            "prexif": "dbo",
+            "display_name": "Country",
+            "cnt": "127",
+            "cnt0": 127,
+            "fullName": "dbo:Country (127)",
+            "data_prop": "1",
+            "object_prop": "2",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_9": {
+            "id": 9,
+            "super_classes": [
+                "c_6_9"
+            ],
+            "sub_classes": [],
+            "used": true,
+            "isAbstract": false,
+            "prexif": "dbo",
+            "display_name": "City",
+            "cnt": "951",
+            "cnt0": 951,
+            "fullName": "dbo:City (951)",
+            "data_prop": "1",
+            "object_prop": "2",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_10": {
+            "id": 10,
+            "super_classes": [
+                "c_3"
+            ],
+            "sub_classes": [
+                {
+                    "id": 26,
+                    "super_classes": [
+                        "c_10"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": "ncat",
+                    "display_name": "Physiology_or_Medicine",
+                    "cnt": "225",
+                    "cnt0": 225,
+                    "fullName": "ncat:Physiology_or_Medicine (225)",
+                    "data_prop": "5",
+                    "object_prop": "5",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                },
+                {
+                    "id": 20,
+                    "super_classes": [
+                        "c_10"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": "ncat",
+                    "display_name": "Physics",
+                    "cnt": "221",
+                    "cnt0": 221,
+                    "fullName": "ncat:Physics (221)",
+                    "data_prop": "5",
+                    "object_prop": "5",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                },
+                {
+                    "id": 19,
+                    "super_classes": [
+                        "c_10"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": "ncat",
+                    "display_name": "Chemistry",
+                    "cnt": "191",
+                    "cnt0": 191,
+                    "fullName": "ncat:Chemistry (191)",
+                    "data_prop": "5",
+                    "object_prop": "5",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                },
+                {
+                    "id": 28,
+                    "super_classes": [
+                        "c_10"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": "ncat",
+                    "display_name": "Peace",
+                    "cnt": "140",
+                    "cnt0": 140,
+                    "fullName": "ncat:Peace (140)",
+                    "data_prop": "5",
+                    "object_prop": "5",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                },
+                {
+                    "id": 23,
+                    "super_classes": [
+                        "c_10"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": "ncat",
+                    "display_name": "Literature",
+                    "cnt": "118",
+                    "cnt0": 118,
+                    "fullName": "ncat:Literature (118)",
+                    "data_prop": "5",
+                    "object_prop": "4",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                },
+                {
+                    "id": 27,
+                    "super_classes": [
+                        "c_10"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": "ncat",
+                    "display_name": "Economic_Sciences",
+                    "cnt": "89",
+                    "cnt0": 89,
+                    "fullName": "ncat:Economic_Sciences (89)",
+                    "data_prop": "5",
+                    "object_prop": "5",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                }
+            ],
+            "used": true,
+            "isAbstract": false,
+            "prexif": "",
+            "display_name": "LaureateAward",
+            "cnt": "984",
+            "cnt0": 984,
+            "fullName": ":LaureateAward (984)",
+            "data_prop": "5",
+            "object_prop": "5",
+            "atr_list": [
+                ":share",
+                ":sortOrder"
+            ],
+            "atr_string": ":share\n:sortOrder",
+            "sub_classes_string": "ncat:Physiology_or_Medicine (225)\nncat:Physics (221)\nncat:Chemistry (191)\nncat:Peace (140)\nncat:Literature (118)\nncat:Economic_Sciences (89)"
+        },
+        "c_11": {
+            "id": 11,
+            "super_classes": [
+                "c_4"
+            ],
+            "sub_classes": [],
+            "used": true,
+            "isAbstract": false,
+            "prexif": "foaf",
+            "display_name": "Organization",
+            "cnt": "27",
+            "cnt0": 27,
+            "fullName": "foaf:Organization (27)",
+            "data_prop": "4",
+            "object_prop": "5",
+            "atr_list": [
+                "dct:created",
+                "sschema:foundingDate"
+            ],
+            "atr_string": "dct:created\nsschema:foundingDate",
+            "sub_classes_string": ""
+        },
+        "c_13": {
+            "id": 13,
+            "super_classes": [
+                "c_3"
+            ],
+            "sub_classes": [
+                {
+                    "id": 24,
+                    "super_classes": [
+                        "c_13"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": "",
+                    "display_name": "Physics",
+                    "cnt": "115",
+                    "cnt0": 115,
+                    "fullName": ":Physics (115)",
+                    "data_prop": "4",
+                    "object_prop": "4",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                },
+                {
+                    "id": 17,
+                    "super_classes": [
+                        "c_13"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": "",
+                    "display_name": "Chemistry",
+                    "cnt": "114",
+                    "cnt0": 114,
+                    "fullName": ":Chemistry (114)",
+                    "data_prop": "4",
+                    "object_prop": "4",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                },
+                {
+                    "id": 18,
+                    "super_classes": [
+                        "c_13"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": "",
+                    "display_name": "Literature",
+                    "cnt": "114",
+                    "cnt0": 114,
+                    "fullName": ":Literature (114)",
+                    "data_prop": "3",
+                    "object_prop": "4",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                },
+                {
+                    "id": 25,
+                    "super_classes": [
+                        "c_13"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": "",
+                    "display_name": "Physiology_or_Medicine",
+                    "cnt": "113",
+                    "cnt0": 113,
+                    "fullName": ":Physiology_or_Medicine (113)",
+                    "data_prop": "3",
+                    "object_prop": "4",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                },
+                {
+                    "id": 22,
+                    "super_classes": [
+                        "c_13"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": "",
+                    "display_name": "Peace",
+                    "cnt": "103",
+                    "cnt0": 103,
+                    "fullName": ":Peace (103)",
+                    "data_prop": "3",
+                    "object_prop": "4",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                },
+                {
+                    "id": 21,
+                    "super_classes": [
+                        "c_13"
+                    ],
+                    "sub_classes": [],
+                    "used": false,
+                    "isAbstract": false,
+                    "prexif": "",
+                    "display_name": "Economic_Sciences",
+                    "cnt": "53",
+                    "cnt0": 53,
+                    "fullName": ":Economic_Sciences (53)",
+                    "data_prop": "3",
+                    "object_prop": "4",
+                    "atr_list": [],
+                    "atr_string": "",
+                    "sub_classes_string": ""
+                }
+            ],
+            "used": true,
+            "isAbstract": false,
+            "prexif": "",
+            "display_name": "NobelPrize",
+            "cnt": "612",
+            "cnt0": 612,
+            "fullName": ":NobelPrize (612)",
+            "data_prop": "4",
+            "object_prop": "4",
+            "atr_list": [
+                ":categoryOrder"
+            ],
+            "atr_string": ":categoryOrder",
+            "sub_classes_string": ":Physics (115)\n:Chemistry (114)\n:Literature (114)\n:Physiology_or_Medicine (113)\n:Peace (103)\n:Economic_Sciences (53)"
+        },
+        "c_17": {
+            "id": 17,
+            "super_classes": [
+                "c_13"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": "",
+            "display_name": "Chemistry",
+            "cnt": "114",
+            "cnt0": 114,
+            "fullName": ":Chemistry (114)",
+            "data_prop": "4",
+            "object_prop": "4",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_18": {
+            "id": 18,
+            "super_classes": [
+                "c_13"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": "",
+            "display_name": "Literature",
+            "cnt": "114",
+            "cnt0": 114,
+            "fullName": ":Literature (114)",
+            "data_prop": "3",
+            "object_prop": "4",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_19": {
+            "id": 19,
+            "super_classes": [
+                "c_10"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": "ncat",
+            "display_name": "Chemistry",
+            "cnt": "191",
+            "cnt0": 191,
+            "fullName": "ncat:Chemistry (191)",
+            "data_prop": "5",
+            "object_prop": "5",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_20": {
+            "id": 20,
+            "super_classes": [
+                "c_10"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": "ncat",
+            "display_name": "Physics",
+            "cnt": "221",
+            "cnt0": 221,
+            "fullName": "ncat:Physics (221)",
+            "data_prop": "5",
+            "object_prop": "5",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_21": {
+            "id": 21,
+            "super_classes": [
+                "c_13"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": "",
+            "display_name": "Economic_Sciences",
+            "cnt": "53",
+            "cnt0": 53,
+            "fullName": ":Economic_Sciences (53)",
+            "data_prop": "3",
+            "object_prop": "4",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_22": {
+            "id": 22,
+            "super_classes": [
+                "c_13"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": "",
+            "display_name": "Peace",
+            "cnt": "103",
+            "cnt0": 103,
+            "fullName": ":Peace (103)",
+            "data_prop": "3",
+            "object_prop": "4",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_23": {
+            "id": 23,
+            "super_classes": [
+                "c_10"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": "ncat",
+            "display_name": "Literature",
+            "cnt": "118",
+            "cnt0": 118,
+            "fullName": "ncat:Literature (118)",
+            "data_prop": "5",
+            "object_prop": "4",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_24": {
+            "id": 24,
+            "super_classes": [
+                "c_13"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": "",
+            "display_name": "Physics",
+            "cnt": "115",
+            "cnt0": 115,
+            "fullName": ":Physics (115)",
+            "data_prop": "4",
+            "object_prop": "4",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_25": {
+            "id": 25,
+            "super_classes": [
+                "c_13"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": "",
+            "display_name": "Physiology_or_Medicine",
+            "cnt": "113",
+            "cnt0": 113,
+            "fullName": ":Physiology_or_Medicine (113)",
+            "data_prop": "3",
+            "object_prop": "4",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_26": {
+            "id": 26,
+            "super_classes": [
+                "c_10"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": "ncat",
+            "display_name": "Physiology_or_Medicine",
+            "cnt": "225",
+            "cnt0": 225,
+            "fullName": "ncat:Physiology_or_Medicine (225)",
+            "data_prop": "5",
+            "object_prop": "5",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_27": {
+            "id": 27,
+            "super_classes": [
+                "c_10"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": "ncat",
+            "display_name": "Economic_Sciences",
+            "cnt": "89",
+            "cnt0": 89,
+            "fullName": "ncat:Economic_Sciences (89)",
+            "data_prop": "5",
+            "object_prop": "5",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_28": {
+            "id": 28,
+            "super_classes": [
+                "c_10"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": "ncat",
+            "display_name": "Peace",
+            "cnt": "140",
+            "cnt0": 140,
+            "fullName": "ncat:Peace (140)",
+            "data_prop": "5",
+            "object_prop": "5",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_29": {
+            "id": 29,
+            "super_classes": [
+                "c_5"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": null,
+            "display_name": "female",
+            "cnt": "60",
+            "cnt0": 60,
+            "fullName": "null:female (60)",
+            "data_prop": "8",
+            "object_prop": "7",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_30": {
+            "id": 30,
+            "super_classes": [
+                "c_5"
+            ],
+            "sub_classes": [],
+            "used": false,
+            "isAbstract": false,
+            "prexif": null,
+            "display_name": "male",
+            "cnt": "889",
+            "cnt0": 889,
+            "fullName": "null:male (889)",
+            "data_prop": "8",
+            "object_prop": "7",
+            "atr_list": [],
+            "atr_string": "",
+            "sub_classes_string": ""
+        },
+        "c_6_9": {
+            "id": "c_6_9",
+            "fullName": " ",
+            "used": true,
+            "isAbstract": true,
+            "super_classes": [],
+            "sub_classes": [],
+            "atr_list": [
+                "rdfs:label"
+            ],
+            "subClasses": "dbo:City (951)\ndbo:Country (127)",
+            "atr_string": "rdfs:label",
+            "sub_classes_string": ""
+        }
+    },
+    "assoc": {
+        "c_3_c_4": {
+            "list": [
+                ":laureate"
+            ],
+            "from": "c_3",
+            "to": "c_4",
+            "string": ":laureate"
+        },
+        "c_4_c_10": {
+            "list": [
+                ":laureateAward"
+            ],
+            "from": "c_4",
+            "to": "c_10",
+            "string": ":laureateAward"
+        },
+        "c_4_c_13": {
+            "list": [
+                ":nobelPrize"
+            ],
+            "from": "c_4",
+            "to": "c_13",
+            "string": ":nobelPrize"
+        },
+        "c_10_c_1": {
+            "list": [
+                ":university"
+            ],
+            "from": "c_10",
+            "to": "c_1",
+            "string": ":university"
+        },
+        "c_5_c_6_9": {
+            "list": [
+                "dbo:birthPlace",
+                "dbo:deathPlace"
+            ],
+            "from": "c_5",
+            "to": "c_6_9",
+            "string": "dbo:birthPlace\ndbo:deathPlace"
+        },
+        "c_5_c_1": {
+            "list": [
+                "dbo:affiliation"
+            ],
+            "from": "c_5",
+            "to": "c_1",
+            "string": "dbo:affiliation"
+        },
+        "c_1_c_6": {
+            "list": [
+                "dbo:country"
+            ],
+            "from": "c_1",
+            "to": "c_6",
+            "string": "dbo:country"
+        },
+        "c_1_c_9": {
+            "list": [
+                "dbo:city"
+            ],
+            "from": "c_1",
+            "to": "c_9",
+            "string": "dbo:city"
+        },
+        "c_10_c_13": {
+            "list": [
+                "dct:isPartOf"
+            ],
+            "from": "c_10",
+            "to": "c_13",
+            "string": "dct:isPartOf"
+        },
+        "c_13_c_10": {
+            "list": [
+                "dct:hasPart"
+            ],
+            "from": "c_13",
+            "to": "c_10",
+            "string": "dct:hasPart"
+        },
+        "c_11_c_6_9": {
+            "list": [
+                "sschema:foundingLocation"
+            ],
+            "from": "c_11",
+            "to": "c_6_9",
+            "string": "sschema:foundingLocation"
+        }
+    }
+}
