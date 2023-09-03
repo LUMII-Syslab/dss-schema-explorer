@@ -11,13 +11,15 @@ function MakeDiagram_json()
 	
 	for k,el in pairs(data.classes) do
 		if ( el.used ) then
-			if ( el.isAbstract) then
-				table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, Label = "SubClasses:", A5 = el.subClasses, IsAbstract = "true" }}
+			if ( el.type == 'Abstract') then
+				table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, Type = el.type, A6 = el.atr_string2 }}
 			else
 				if ( el.sub_classes_string ~= "" ) then
-					table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, Label = "SubClasses:",  A5 = el.sub_classes_string }}
+					table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, Type = el.type,  A6 = el.atr_string2 }}
+					table_representation.SH[k..'_sub'] = { compartments = { A5 = el.sub_classes_string, Type = 'SubCat'}}
+					table_representation.Gen[k..'_sub_gen'] = { source = k, target = k..'_sub', compartments = { Val = " "}}
 				else
-					table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string }}
+					table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, A6 = el.atr_string2, Type = el.type}}
 					--table_representation.SH[k] = { compartments = { name = el.fullName, A1 = "data_prop ".. el.data_prop .. "; object prop ".. el.object_prop, A4 = el.atr_string, A5 = el.sub_classes_string }}
 				end
 			end
@@ -33,12 +35,14 @@ function MakeDiagram_json()
 	end
 		
 	for k,el in pairs(data.assoc) do
-		table_representation.Line3[k] = { source = el.from, target = el.to, compartments = { name = k, A = el.string}}
+		if ( el.removed == false ) then
+			table_representation.Line3[k] = { source = el.from, target = el.to, compartments = { name = k, A = el.string}}
+		end
 	end
 	
 		
 	print(dumptable(table_representation.Gen))
-	print(dumptable(table_representation.Gen_box))
+	--print(dumptable(table_representation.Gen_box))
 		
 		
 	local dd = utilities.active_elements()
