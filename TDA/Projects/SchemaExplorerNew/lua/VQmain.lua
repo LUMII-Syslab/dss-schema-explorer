@@ -14,11 +14,17 @@ function MakeDiagram_json()
 			if ( el.type == 'Abstract') then
 				table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, Type = el.type, A6 = el.atr_string2 }}
 			else
+				if ( el.sub_classes_clasif_string ~= "" ) then
+					table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, Type = el.type,  A6 = el.atr_string2 }}
+					table_representation.SH[k..'_sub'] = { compartments = { A5 = el.sub_classes_clasif_string, Type = 'SubCat'}}
+					table_representation.Gen[k..'_sub_gen'] = { source = k, target = k..'_sub', compartments = { Val = " "}}
+				end	
 				if ( el.sub_classes_string ~= "" ) then
 					table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, Type = el.type,  A6 = el.atr_string2 }}
-					table_representation.SH[k..'_sub'] = { compartments = { A5 = el.sub_classes_string, Type = 'SubCat'}}
-					table_representation.Gen[k..'_sub_gen'] = { source = k, target = k..'_sub', compartments = { Val = " "}}
-				else
+					table_representation.SH[k..'_sub'] = { compartments = { A5 = el.sub_classes_string, Type = 'Sub'}}
+					table_representation.Gen[k..'_sub_gen'] = { source = k, target = k..'_sub', compartments = { Val = " "}}	
+				end	
+				if ( el.sub_classes_clasif_string == "" and el.sub_classes_string == "" ) then
 					table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, A6 = el.atr_string2, Type = el.type}}
 					--table_representation.SH[k] = { compartments = { name = el.fullName, A1 = "data_prop ".. el.data_prop .. "; object prop ".. el.object_prop, A4 = el.atr_string, A5 = el.sub_classes_string }}
 				end
