@@ -8,17 +8,13 @@ The **SchemaExplorer** module (as a project under the **TDA tool**) has been dev
 
 The **TDA tool** has been developed at Institute of Mathematics and Computer Science, University of Latvia, https://lumii.lv.
 
-## Examples
-
-Some [schema visualization examples](https://viziquer.lumii.lv/projects/lzp_2021/VisualSchemaSamples.pdf) are available from the [ViziQuer tool](https://viziquer.lumii.lv) site.
-
 ## Installation
 
 1. Perform `git clone`for this repository.
 1. Start the `tda.exe` directly, or create a shortcut for it.
 1. At the first start you may be asked (once or twice) for elevated rights as the tool needs to register an OCX component for graphical diagrams.
 1. On some configurations, it might be necessary to run TDA with administrator privileges at the first start.
-1. Open SchemaExplorer project (`./SchemaExplorer`). The project contains examples of DSS schema visualizations.
+1. Open SchemaExplorer project (`./SchemaExplorerProject`). The project contains examples of DSS schema visualizations.
 
 ![](./Images/TDA_1.PNG)
 
@@ -28,9 +24,11 @@ Some [schema visualization examples](https://viziquer.lumii.lv/projects/lzp_2021
 ## Data preparation
 
 1. Data preparation is done in the **ViziQuer** tool. See https://viziquer.lumii.lv for the tool description.
-1. Export parameters are set in the EXTRA tab in the class tree of the diagram.
-1. Data preparation time depends on the number of classes and properties, the results are two files `data.txt` and `data2.txt`.
-1. These two files should be copied into the TDA project in the Schema Explorer (`./SchemaExplorer`), replacing existing files there.
+1. Export parameters are set in the form.
+1. Data preparation time depends on the number of classes and properties, the results are file `diagr_data.json`.
+1. This file should be copied into the SchemaExplorerProject, replacing existing file there.
+
+![](./Images/VQ_2.PNG)
 
 ![](./Images/VQ_1.PNG)
 
