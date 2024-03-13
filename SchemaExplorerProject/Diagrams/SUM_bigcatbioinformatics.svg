@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+ width="813" height="475" viewBox="0 0 813 475">
+ onmousemove="movetip(evt)" onmouseup="endmove()">
+<rect x="0" y="0" width="100%" height="100%" style="fill:White;"/>
+<script type="application/ecmascript"> <![CDATA[
+var dragtipid = null; var dragcase = false; function init(evt){
+if (window.svgDocument==null) svgDocument = evt.target.ownerDocument;
+}
+function movetip(evt){if (dragtipid!=null){ dragcase = true;
+var tip=svgDocument.getElementById(dragtipid);
+tip.setAttributeNS(null,"x",evt.clientX-2);
+tip.setAttributeNS(null,"y",evt.clientY-2);
+}}
+function endmove(){dragtipid = null;}
+function startmove(evt,id){dragtipid = id; dragcase = false;
+var tip=svgDocument.getElementById(dragtipid);
+tip.setAttributeNS(null,"x",evt.clientX-2);
+tip.setAttributeNS(null,"y",evt.clientY-2);
+}
+function Showtip(evt,id){ dragtipid = null;
+var tip=svgDocument.getElementById(id);
+var vis=tip.getAttributeNS(null,"visibility");
+if (vis=="hidden"){
+tip.setAttributeNS(null,"x",evt.clientX-2);
+tip.setAttributeNS(null,"y",evt.clientY-2);
+tip.setAttributeNS(null,"visibility","visible");
+}}
+function Hidetip(id){ dragtipid = null; if (dragcase==false){
+var tip=svgDocument.getElementById(id);
+tip.setAttributeNS(null,"visibility","hidden");
+}}
+]]></script>
+<defs><linearGradient id="activ1" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" style="stop-color:#FFFF00;stop-opacity:1"/>
+<stop offset="100%" style="stop-color:#FFFFF0;stop-opacity:1"/>
+</linearGradient></defs>
+<g id="2002696256"><polygon points="231,249 351,249 351,431 231,431 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="264" y="255">aopkb:KeyEvent (1425)</tspan>
+</text>
+<line x1="233" y1="256" x2="350" y2="256"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="233" y="261">aopkb:LifeStageContext (378) [*] </tspan>
+<tspan x="233" y="267">dc:description (506) [*] </tspan>
+<tspan x="233" y="273">dc:identifier (1425) [1]  -&gt;  sio:[ChEBI identifier </tspan>
+<tspan x="233" y="279">(CHEMINF_000407)] et al.,thes:[Stressor (C54571)] </tspan>
+<tspan x="233" y="285">or aopkb:AdverseOutcomePathway..(6)</tspan>
+<tspan x="233" y="291">dc:source (1425) [1] </tspan>
+<tspan x="233" y="297">dc:title (1425) [*] </tspan>
+<tspan x="233" y="303">dct:alternative (1425) [*] </tspan>
+<tspan x="233" y="309">foaf:page (1425) [1]  -&gt;  aopkb:KeyEvent,aopkb:</tspan>
+<tspan x="233" y="315">KeyEventRelationship,thes:[Stressor (C54571)] or </tspan>
+<tspan x="233" y="321">aopkb:AdverseOutcomePathway</tspan>
+<tspan x="233" y="327">obo:MMO_0000000 (468) [1] D</tspan>
+<tspan x="233" y="333">obo:PATO_0000001 (826) [*] D</tspan>
+<tspan x="233" y="339">obo:PATO_0000047 (366) [*] </tspan>
+<tspan x="233" y="345">rdf:type (1425) [*]  -&gt; IRI</tspan>
+<tspan x="233" y="351">rdfs:label (1425) [1] </tspan>
+<tspan x="233" y="357">rdfs:seeAlso (1425) [1]  -&gt;  aopkb:</tspan>
+<tspan x="233" y="363">AdverseOutcomePathway,aopkb:KeyEvent,aopkb:</tspan>
+<tspan x="233" y="369">KeyEventRelationship</tspan>
+<tspan x="233" y="375">thes:C25664 (1425) [1] D</tspan>
+<tspan x="233" y="381">&lt;-dc:identifier (1425)  &lt;-  sio:[ChEBI identifier </tspan>
+<tspan x="233" y="387">(CHEMINF_000407)] et al.,thes:[Stressor (C54571)] </tspan>
+<tspan x="233" y="393">or aopkb:AdverseOutcomePathway..(7)</tspan>
+<tspan x="233" y="399">&lt;-foaf:page (1425)  &lt;-  aopkb:KeyEvent,aopkb:</tspan>
+<tspan x="233" y="405">KeyEventRelationship,thes:[Stressor (C54571)] or </tspan>
+<tspan x="233" y="411">aopkb:AdverseOutcomePathway</tspan>
+<tspan x="233" y="417">&lt;-rdfs:seeAlso (1425)  &lt;-  aopkb:</tspan>
+<tspan x="233" y="423">AdverseOutcomePathway,edam:[UniProt ID (data_</tspan>
+<tspan x="233" y="429">2291)]..(4)</tspan>
+</text>
+</g>
+<g id="2002696267"><polygon points="55,68 175,68 175,86 55,86 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="85" y="73">void:[Linkset (Linkset)] (2)</tspan>
+</text>
+<line x1="56" y1="75" x2="174" y2="75"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="56" y="80">pav:importedOn (2) [1] D</tspan>
+</text>
+</g>
+<g id="2002696278"><polygon points="52,107 172,107 172,235 52,235 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="68" y="113">aopkb:AdverseOutcomePathway (465)</tspan>
+</text>
+<line x1="53" y1="114" x2="171" y2="114"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="53" y="119">aopkb:AopContext (140) [1] D</tspan>
+<tspan x="53" y="125">aopkb:LifeStageContext (260) [*] </tspan>
+<tspan x="53" y="131">aopkb:has_evidence (124) [1] D</tspan>
+<tspan x="53" y="137">dc:creator (363) [1] D</tspan>
+<tspan x="53" y="143">dc:source (465) [1] </tspan>
+<tspan x="53" y="149">dct:abstract (253) [1] D</tspan>
+<tspan x="53" y="155">dct:accessRights (465) [1] D</tspan>
+<tspan x="53" y="161">dct:alternative (465) [*] </tspan>
+<tspan x="53" y="167">edam:operation_3799 (110) [1] D</tspan>
+<tspan x="53" y="173">obo:PATO_0000047 (266) [*] </tspan>
+<tspan x="53" y="179">rdfs:seeAlso (465) [1]  -&gt;  aopkb:</tspan>
+<tspan x="53" y="185">AdverseOutcomePathway,aopkb:KeyEvent,aopkb:</tspan>
+<tspan x="53" y="191">KeyEventRelationship</tspan>
+<tspan x="53" y="197">thes:C25217 (125) [1] D</tspan>
+<tspan x="53" y="203">thes:C25688 (428) [*] D</tspan>
+<tspan x="53" y="209">thes:C25725 (98) [1] D</tspan>
+<tspan x="53" y="215">thes:C48192 (130) [1] D</tspan>
+<tspan x="53" y="221">&lt;-rdfs:seeAlso (465)  &lt;-  aopkb:</tspan>
+<tspan x="53" y="227">AdverseOutcomePathway,edam:[UniProt ID (data_</tspan>
+<tspan x="53" y="233">2291)]..(4)</tspan>
+</text>
+</g>
+<g id="2002696289"><polygon points="403,8 532,8 532,113 403,113 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<polygon points="402,9 531,9 531,114 402,114 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="405" y="15">sio:[CAS registry number (CHEMINF_000446)] or sio:</tspan>
+<tspan x="410" y="21">[chemical entity (CHEMINF_000000)] G101 (386)</tspan>
+</text>
+<line x1="404" y1="22" x2="530" y2="22"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="404" y="27">dc:identifier (386) [1]  -&gt;  sio:[ChEBI identifier (CHEMINF_</tspan>
+<tspan x="404" y="33">000407)] et al.,thes:[Stressor (C54571)] or aopkb:</tspan>
+<tspan x="404" y="39">AdverseOutcomePathway..(6)</tspan>
+<tspan x="404" y="45">dc:source (386) [1] </tspan>
+<tspan x="404" y="51">dc:title (386) [*] </tspan>
+<tspan x="404" y="57">dct:alternative (1.3e4) [*] </tspan>
+<tspan x="404" y="63">rdf:type (772) [*]  -&gt; IRI</tspan>
+<tspan x="404" y="69">sio:CHEMINF_000059 (370) [1] D -&gt; IRI</tspan>
+<tspan x="404" y="75">sio:CHEMINF_000568 (386) [1] D -&gt; IRI</tspan>
+<tspan x="404" y="81">sio:[CAS registry number (CHEMINF_000446)] (386) [1] D</tspan>
+<tspan x="404" y="87">&lt;-dc:identifier (386)  &lt;-  sio:[ChEBI identifier (CHEMINF_</tspan>
+<tspan x="404" y="93">000407)] et al.,thes:[Stressor (C54571)] or aopkb:</tspan>
+<tspan x="404" y="99">AdverseOutcomePathway..(7)</tspan>
+</text>
+<text style="font-family:Arial;font-size:4px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="404" y="105">sio:[CAS registry number (CHEMINF_000446)] (386)</tspan>
+<tspan x="404" y="111">sio:[chemical entity (CHEMINF_000000)] (386)</tspan>
+</text>
+</g>
+<g id="2002696300"><polygon points="512,208 632,208 632,226 512,226 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="522" y="213">edam:[Gene ID (HGNC) (data_2298)] (1561)</tspan>
+</text>
+<line x1="514" y1="215" x2="632" y2="215"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="514" y="220">edam:[Gene ID (HGNC) (data_2298)] (1561) [1] D</tspan>
+</text>
+</g>
+<g id="2002696311"><polygon points="472,144 592,144 592,182 472,182 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="483" y="150">edam:[Gene identifier (data_1025)] (1.2e4)</tspan>
+</text>
+<line x1="474" y1="151" x2="591" y2="151"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="474" y="156">dc:identifier (1.2e4) [1]  -&gt;  sio:[ChEBI identifier </tspan>
+<tspan x="474" y="162">(CHEMINF_000407)] et al.,thes:[Stressor (C54571)] </tspan>
+<tspan x="474" y="168">or aopkb:AdverseOutcomePathway..(6)</tspan>
+<tspan x="474" y="174">dc:source (1.2e4) [1] </tspan>
+<tspan x="474" y="180">rdf:type (2.4e4) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002696322"><polygon points="434,314 554,314 554,382 434,382 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="440" y="319">obo:[physical object quality (PATO_0001241)] </tspan>
+<tspan x="488" y="325">(431)</tspan>
+</text>
+<line x1="435" y1="327" x2="553" y2="327"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="435" y="332">dc:identifier (431) [1]  -&gt;  sio:[ChEBI identifier </tspan>
+<tspan x="435" y="338">(CHEMINF_000407)] et al.,thes:[Stressor (C54571)] </tspan>
+<tspan x="435" y="344">or aopkb:AdverseOutcomePathway..(6)</tspan>
+<tspan x="435" y="350">dc:source (431) [1] </tspan>
+<tspan x="435" y="356">dc:title (431) [*] </tspan>
+<tspan x="435" y="362">rdf:type (485) [*]  -&gt; IRI</tspan>
+<tspan x="435" y="368">&lt;-dc:identifier (431)  &lt;-  sio:[ChEBI identifier </tspan>
+<tspan x="435" y="374">(CHEMINF_000407)] et al.,thes:[Stressor (C54571)] </tspan>
+<tspan x="435" y="380">or aopkb:AdverseOutcomePathway..(7)</tspan>
+</text>
+</g>
+<g id="2002696355"><polygon points="358,194 478,194 478,212 358,212 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="369" y="199">edam:[Gene ID (NCBI) (data_1027)] (1462)</tspan>
+</text>
+<line x1="360" y1="201" x2="477" y2="201"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="360" y="206">edam:[Gene ID (NCBI) (data_1027)] (1462) [1] D</tspan>
+</text>
+</g>
+<g id="2002696366"><polygon points="344,146 464,146 464,164 344,164 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="369" y="152">thes:[Stressor (C54571)] (652)</tspan>
+</text>
+</g>
+<g id="2002696377"><polygon points="382,258 502,258 502,276 382,276 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="392" y="264">edam:[Ensembl gene ID (data_1033)] (1423)</tspan>
+</text>
+<line x1="384" y1="266" x2="502" y2="266"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="384" y="271">edam:[Ensembl gene ID (data_1033)] (1423) [1] D</tspan>
+</text>
+</g>
+<g id="2002696388"><polygon points="60,4 180,4 180,60 60,60 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="103" y="10">void:Dataset (4)</tspan>
+</text>
+<line x1="62" y1="11" x2="180" y2="11"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="62" y="16">dc:description (4) [*] </tspan>
+<tspan x="62" y="22">dct:accuralPeriodicity (2) [1] D -&gt; IRI</tspan>
+<tspan x="62" y="28">dct:modified (1) [1] </tspan>
+<tspan x="62" y="34">foaf:homepage (2) [1] D -&gt; IRI</tspan>
+<tspan x="62" y="40">pav:createdBy (2) [1] D -&gt; IRI</tspan>
+<tspan x="62" y="46">pav:createdOn (2) [1] D</tspan>
+<tspan x="62" y="52">pav:createdWith (4 50%d) [*] D -&gt; IRI</tspan>
+<tspan x="62" y="58">rdf:type (6) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002696410"><polygon points="14,261 134,261 134,425 14,425 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="33" y="267">aopkb:KeyEventRelationship (1951)</tspan>
+</text>
+<line x1="15" y1="268" x2="133" y2="268"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="15" y="273">dc:description (578) [*] </tspan>
+<tspan x="15" y="279">dc:identifier (1951) [1]  -&gt;  sio:[ChEBI identifier </tspan>
+<tspan x="15" y="285">(CHEMINF_000407)] et al.,thes:[Stressor (C54571)] </tspan>
+<tspan x="15" y="291">or aopkb:AdverseOutcomePathway..(6)</tspan>
+<tspan x="15" y="297">dct:created (1951) [1] </tspan>
+<tspan x="15" y="303">dct:modified (1951) [1] </tspan>
+<tspan x="15" y="309">edam:data_2042 (550) [1] D</tspan>
+<tspan x="15" y="315">foaf:page (1951) [1]  -&gt;  aopkb:KeyEvent,aopkb:</tspan>
+<tspan x="15" y="321">KeyEventRelationship,thes:[Stressor (C54571)] or </tspan>
+<tspan x="15" y="327">aopkb:AdverseOutcomePathway</tspan>
+<tspan x="15" y="333">rdf:type (1951) [*]  -&gt; IRI</tspan>
+<tspan x="15" y="339">rdfs:label (1951) [1] </tspan>
+<tspan x="15" y="345">rdfs:seeAlso (1951) [1]  -&gt;  aopkb:</tspan>
+<tspan x="15" y="351">AdverseOutcomePathway,aopkb:KeyEvent,aopkb:</tspan>
+<tspan x="15" y="357">KeyEventRelationship</tspan>
+<tspan x="15" y="363">thes:C71478 (481) [1] D</tspan>
+<tspan x="15" y="369">thes:C80263 (563) [1] D</tspan>
+<tspan x="15" y="375">&lt;-dc:identifier (1951)  &lt;-  sio:[ChEBI identifier </tspan>
+<tspan x="15" y="381">(CHEMINF_000407)] et al.,thes:[Stressor (C54571)] </tspan>
+<tspan x="15" y="387">or aopkb:AdverseOutcomePathway..(7)</tspan>
+<tspan x="15" y="393">&lt;-foaf:page (1951)  &lt;-  aopkb:KeyEvent,aopkb:</tspan>
+<tspan x="15" y="399">KeyEventRelationship,thes:[Stressor (C54571)] or </tspan>
+<tspan x="15" y="405">aopkb:AdverseOutcomePathway</tspan>
+<tspan x="15" y="411">&lt;-rdfs:seeAlso (1951)  &lt;-  aopkb:</tspan>
+<tspan x="15" y="417">AdverseOutcomePathway,edam:[UniProt ID (data_</tspan>
+<tspan x="15" y="423">2291)]..(4)</tspan>
+</text>
+</g>
+<g id="2002696421"><polygon points="374,216 494,216 494,254 374,254 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="392" y="222">edam:[UniProt ID (data_2291)] (7575)</tspan>
+</text>
+<line x1="376" y1="223" x2="494" y2="223"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="376" y="228">edam:[UniProt ID (data_2291)] (7575) [1] D</tspan>
+<tspan x="376" y="234">owl:sameAs (511) [1] D -&gt; IRI</tspan>
+<tspan x="376" y="240">rdfs:seeAlso (511) [1]  -&gt;  aopkb:</tspan>
+<tspan x="376" y="246">AdverseOutcomePathway,aopkb:KeyEvent,aopkb:</tspan>
+<tspan x="376" y="252">KeyEventRelationship</tspan>
+</text>
+</g>
+<g id="2002696333"><polygon points="210,8 330,8 330,142 210,142 "
+style="fill:#FBECAE; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="230" y="14">thes:[Stressor (C54571)] or aopkb:</tspan>
+<tspan x="224" y="20">AdverseOutcomePathway S103 (~1117)</tspan>
+</text>
+<line x1="212" y1="22" x2="329" y2="22"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="212" y="27">dc:description (533) [*] </tspan>
+<tspan x="212" y="33">dc:identifier (465) [1]  -&gt;  sio:[ChEBI identifier </tspan>
+<tspan x="212" y="39">(CHEMINF_000407)] et al.,thes:[Stressor (C54571)] </tspan>
+<tspan x="212" y="45">or aopkb:AdverseOutcomePathway..(6)</tspan>
+<tspan x="212" y="51">dc:title (465) [*] </tspan>
+<tspan x="212" y="57">dct:created (465) [1] </tspan>
+<tspan x="212" y="63">dct:modified (465) [1] </tspan>
+<tspan x="212" y="69">foaf:page (465) [1]  -&gt;  aopkb:KeyEvent,aopkb:</tspan>
+<tspan x="212" y="75">KeyEventRelationship,thes:[Stressor (C54571)] or </tspan>
+<tspan x="212" y="81">aopkb:AdverseOutcomePathway</tspan>
+<tspan x="212" y="87">rdf:type (465) [*]  -&gt; IRI</tspan>
+<tspan x="212" y="93">rdfs:label (465) [1] </tspan>
+<tspan x="212" y="99">&lt;-dc:identifier (465)  &lt;-  sio:[ChEBI identifier </tspan>
+<tspan x="212" y="105">(CHEMINF_000407)] et al.,thes:[Stressor (C54571)] </tspan>
+<tspan x="212" y="111">or aopkb:AdverseOutcomePathway..(7)</tspan>
+<tspan x="212" y="117">&lt;-foaf:page (465)  &lt;-  aopkb:KeyEvent,aopkb:</tspan>
+<tspan x="212" y="123">KeyEventRelationship,thes:[Stressor (C54571)] or </tspan>
+<tspan x="212" y="129">aopkb:AdverseOutcomePathway</tspan>
+</text>
+</g>
+<g id="2002696344"><polygon points="567,243 688,243 688,445 567,445 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<polygon points="566,244 687,244 687,446 566,446 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="571" y="250">sio:[ChEBI identifier (CHEMINF_000407)] et al. </tspan>
+<tspan x="610" y="256">G102 (~3230)</tspan>
+</text>
+<line x1="567" y1="258" x2="686" y2="258"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="567" y="263">dc:identifier (3230 76%d) [1]  -&gt;  sio:[ChEBI identifier </tspan>
+<tspan x="567" y="269">(CHEMINF_000407)] et al.,thes:[Stressor (C54571)] or </tspan>
+<tspan x="567" y="275">aopkb:AdverseOutcomePathway..(6)</tspan>
+<tspan x="567" y="281">dc:source (3230) [1] </tspan>
+<tspan x="567" y="287">dc:title (802) [*] </tspan>
+<tspan x="567" y="293">rdf:type (3284) [*]  -&gt; IRI</tspan>
+<tspan x="567" y="299">sio:[ChEBI identifier (CHEMINF_000407)] (788) [1] D</tspan>
+<tspan x="567" y="305">sio:[ChEMBL identifier (CHEMINF_000412)] (330) [1] D</tspan>
+<tspan x="567" y="311">sio:[DrugBank identifier (CHEMINF_000406)] (209) [1] </tspan>
+<tspan x="567" y="317">D</tspan>
+<tspan x="567" y="323">sio:[HMDB identifier (CHEMINF_000408)] (407) [1] D</tspan>
+<tspan x="567" y="329">sio:[KEGG identifier (CHEMINF_000409)] (300) [1] D</tspan>
+<tspan x="567" y="335">sio:[LipidMaps identifier (CHEMINF_000564)] (34) [1] </tspan>
+<tspan x="567" y="341">D</tspan>
+<tspan x="567" y="347">sio:[Wikidata identifier (CHEMINF_000567)] (397) [1] D</tspan>
+<tspan x="567" y="353">&lt;-dc:identifier (765)  &lt;-  sio:[ChEBI identifier (CHEMINF</tspan>
+<tspan x="567" y="359">_000407)] et al.,thes:[Stressor (C54571)] or aopkb:</tspan>
+<tspan x="567" y="365">AdverseOutcomePathway..(7)</tspan>
+</text>
+<text style="font-family:Arial;font-size:4px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="567" y="371">aopkb:[Cell-term (CellTypeContext)] (67)</tspan>
+<tspan x="567" y="377">aopkb:[Organ-term (OrganContext)] (81)</tspan>
+<tspan x="567" y="383">n6:[cellular organisms ()] (164)</tspan>
+<tspan x="567" y="389">obo:GO_0008150 (453)</tspan>
+<tspan x="567" y="395">sio:[ChEBI identifier (CHEMINF_000407)] (788)</tspan>
+<tspan x="567" y="401">sio:[ChEMBL identifier (CHEMINF_000412)] (330)</tspan>
+<tspan x="567" y="407">sio:[DrugBank identifier (CHEMINF_000406)] (209)</tspan>
+<tspan x="567" y="413">sio:[HMDB identifier (CHEMINF_000408)] (407)</tspan>
+<tspan x="567" y="419">sio:[KEGG identifier (CHEMINF_000409)] (300)</tspan>
+<tspan x="567" y="425">sio:[LipidMaps identifier (CHEMINF_000564)] (34)</tspan>
+<tspan x="567" y="431">sio:[Wikidata identifier (CHEMINF_000567)] (397)</tspan>
+</text>
+</g>
+<g id="2002696399"><polygon points="689,30 809,30 809,62 689,62 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="733" y="35">sd:Service (1)</tspan>
+</text>
+<line x1="690" y1="37" x2="808" y2="37"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="690" y="42">rdf:type (1) [*]  -&gt; IRI</tspan>
+<tspan x="690" y="48">sd:endpoint (1) [1] D -&gt; IRI</tspan>
+<tspan x="690" y="54">sd:resultFormat (2) [*] D -&gt; IRI</tspan>
+<tspan x="690" y="60">sd:supportedLanguage (1) [1] D -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002696142"><path d="M490,382 L490,414 490,415 492,416 566,416 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="563" y1="415" x2="566" y2="416"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="563" y1="417" x2="566" y2="416"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="491" y="388">skos:exactMatch  </tspan>
+</text>
+</g>
+<g id="2002696147"><path d="M505,314 L505,182 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="504" y1="184" x2="505" y2="182"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="506" y1="184" x2="505" y2="182"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="466" y="312">skos:exactMatch  </tspan>
+</text>
+</g>
+<g id="2002696152"><path d="M402,28 L330,28 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="332" y1="27" x2="330" y2="28"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="332" y1="29" x2="330" y2="28"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="373" y="33">dct:isPartOf  </tspan>
+</text>
+</g>
+<g id="2002696157"><path d="M344,153 L303,153 301,152 300,151 300,142 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="299" y1="144" x2="300" y2="142"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="302" y1="144" x2="300" y2="142"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="315" y="159">dct:isPartOf  </tspan>
+</text>
+</g>
+<g id="2002696162"><path d="M574,226 L574,244 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="573" y1="242" x2="574" y2="244"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="576" y1="242" x2="574" y2="244"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="576" y="232">skos:exactMatch  </tspan>
+</text>
+</g>
+<g id="2002696167"><path d="M61,235 L61,261 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="60" y1="259" x2="61" y2="261"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="62" y1="259" x2="61" y2="261"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="63" y="241">aopkb:has_key_event_relationship  </tspan>
+<tspan x="63" y="247">DR</tspan>
+</text>
+</g>
+<g id="2002696172"><path d="M351,295 L532,295 534,294 534,292 534,226 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="533" y1="228" x2="534" y2="226"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="536" y1="228" x2="534" y2="226"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="353" y="288">edam:[Gene identifier (data_1025)]  </tspan>
+<tspan x="353" y="294">R</tspan>
+</text>
+</g>
+<g id="2002696177"><path d="M261,249 L261,142 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="260" y1="144" x2="261" y2="142"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="262" y1="144" x2="261" y2="142"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="233" y="248">dct:isPartOf  </tspan>
+</text>
+</g>
+<g id="2002696182"><path d="M44,261 L44,92 45,91 47,90 210,90 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="208" y1="89" x2="210" y2="90"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="208" y1="91" x2="210" y2="90"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="17" y="260">dct:isPartOf  </tspan>
+</text>
+</g>
+<g id="2002696187"><path d="M153,235 L153,298 154,299 156,300 231,300 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="229" y1="299" x2="231" y2="300"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="229" y1="301" x2="231" y2="300"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="155" y="241">aopkb:has_key_event  DR</tspan>
+<tspan x="155" y="247">aopkb:has_adverse_outcome  DR</tspan>
+<tspan x="155" y="253">aopkb:has_molecular_initiating_</tspan>
+<tspan x="155" y="259">event  DR</tspan>
+</text>
+</g>
+<g id="2002696192"><path d="M531,104 L579,104 580,104 581,106 581,144 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="580" y1="142" x2="581" y2="144"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="582" y1="142" x2="581" y2="144"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="533" y="103">skos:exactMatch  </tspan>
+</text>
+</g>
+<g id="2002696202"><path d="M351,428 L566,428 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="563" y1="427" x2="566" y2="428"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="563" y1="430" x2="566" y2="428"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="353" y="410">aopkb:[Cell-term (CellTypeContext)]  D</tspan>
+<tspan x="353" y="416">aopkb:[Organ-term (OrganContext)]  D</tspan>
+<tspan x="353" y="422">n5:[cellular organisms (131567)]  D</tspan>
+<tspan x="353" y="428">obo:GO_0008150  DR</tspan>
+</text>
+</g>
+<g id="2002696207"><path d="M606,208 L606,182 605,180 604,180 592,180 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="594" y1="178" x2="592" y2="180"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="594" y1="181" x2="592" y2="180"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="567" y="206">skos:exactMatch  </tspan>
+</text>
+</g>
+<g id="2002696212"><path d="M531,76 L675,76 677,77 678,78 678,244 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="676" y1="242" x2="678" y2="244"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="679" y1="242" x2="678" y2="244"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="533" y="75">skos:exactMatch  </tspan>
+</text>
+</g>
+<g id="2002696217"><path d="M351,333 L434,333 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="431" y1="332" x2="434" y2="333"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="431" y1="334" x2="434" y2="333"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="353" y="326">obo:[physical object quality (PATO_</tspan>
+<tspan x="353" y="332">0001241)]  D</tspan>
+</text>
+</g>
+<g id="2002696222"><path d="M60,32 L10,32 8,33 8,34 8,74 8,76 10,77 55,77 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="52" y1="76" x2="55" y2="77"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="52" y1="78" x2="55" y2="77"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="11" y="37">dcat:downloadURL  D</tspan>
+</text>
+</g>
+<g id="2002696227"><path d="M134,390 L231,390 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="229" y1="388" x2="231" y2="390"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="229" y1="391" x2="231" y2="390"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="136" y="383">aopkb:has_downstream_key_event  DR</tspan>
+<tspan x="136" y="389">aopkb:has_upstream_key_event  DR</tspan>
+</text>
+</g>
+<g id="2002696232"><path d="M172,162 L344,162 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="342" y1="160" x2="344" y2="162"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="342" y1="163" x2="344" y2="162"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="174" y="161">thes:[Stressor (C54571)]  DR</tspan>
+</text>
+</g>
+<g id="2002696237"><path d="M439,146 L439,114 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="438" y1="117" x2="439" y2="114"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="440" y1="117" x2="439" y2="114"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="373" y="145">aopkb:has_chemical_entity  D</tspan>
+</text>
+</g>
+<g id="2002696244"><path d="M497,182 L497,258 "
+style="fill:none;stroke-width:1;stroke:Fuchsia;"/>
+<polygon points="499,186 497,182 495,186 "
+style="fill:Silver;stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="498" y="188"> </tspan>
+</text>
+</g>
+<g id="2002696246"><path d="M489,182 L489,216 "
+style="fill:none;stroke-width:1;stroke:Fuchsia;"/>
+<polygon points="491,186 489,182 487,186 "
+style="fill:Silver;stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="490" y="188"> </tspan>
+</text>
+</g>
+<g id="2002696248"><path d="M475,182 L475,194 "
+style="fill:none;stroke-width:1;stroke:Fuchsia;"/>
+<polygon points="477,186 475,182 473,186 "
+style="fill:Silver;stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="476" y="188"> </tspan>
+</text>
+</g>
+<g id="2002696252"><path d="M210,123 L172,123 "
+style="fill:none;stroke-width:1;stroke:Fuchsia;"/>
+<polygon points="206,125 210,123 206,121 "
+style="fill:Silver;stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="205" y="129"> </tspan>
+</text>
+</g>
+<g id="2002696254"><path d="M118,60 L118,68 "
+style="fill:none;stroke-width:1;stroke:Fuchsia;"/>
+<polygon points="120,64 118,60 116,64 "
+style="fill:Silver;stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="119" y="66"> </tspan>
+</text>
+</g>
+<g id="2002696197"><path d="M29,425 L29,468 30,470 32,470 742,470 744,470 744,468 744,218 744,216 742,215 632,215 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="635" y1="214" x2="632" y2="215"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="635" y1="216" x2="632" y2="215"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="31" y="431">edam:[Gene identifier (data_1025)]  R</tspan>
+</text>
+</g>
+<g id="2002696242"><path d="M547,182 L547,208 "
+style="fill:none;stroke-width:1;stroke:Fuchsia;"/>
+<polygon points="549,186 547,182 545,186 "
+style="fill:Silver;stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="549" y="188"> </tspan>
+</text>
+</g>
+<g id="2002696250"><path d="M330,96 L356,96 358,97 358,99 358,146 "
+style="fill:none;stroke-width:1;stroke:Fuchsia;"/>
+<polygon points="334,98 330,96 334,94 "
+style="fill:Silver;stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:5px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="332" y="96"> </tspan>
+</text>
+</g>
+</svg>

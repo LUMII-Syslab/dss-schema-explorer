@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+ width="3105" height="1764" viewBox="0 0 3105 1764">
+ onmousemove="movetip(evt)" onmouseup="endmove()">
+<rect x="0" y="0" width="100%" height="100%" style="fill:White;"/>
+<script type="application/ecmascript"> <![CDATA[
+var dragtipid = null; var dragcase = false; function init(evt){
+if (window.svgDocument==null) svgDocument = evt.target.ownerDocument;
+}
+function movetip(evt){if (dragtipid!=null){ dragcase = true;
+var tip=svgDocument.getElementById(dragtipid);
+tip.setAttributeNS(null,"x",evt.clientX-2);
+tip.setAttributeNS(null,"y",evt.clientY-2);
+}}
+function endmove(){dragtipid = null;}
+function startmove(evt,id){dragtipid = id; dragcase = false;
+var tip=svgDocument.getElementById(dragtipid);
+tip.setAttributeNS(null,"x",evt.clientX-2);
+tip.setAttributeNS(null,"y",evt.clientY-2);
+}
+function Showtip(evt,id){ dragtipid = null;
+var tip=svgDocument.getElementById(id);
+var vis=tip.getAttributeNS(null,"visibility");
+if (vis=="hidden"){
+tip.setAttributeNS(null,"x",evt.clientX-2);
+tip.setAttributeNS(null,"y",evt.clientY-2);
+tip.setAttributeNS(null,"visibility","visible");
+}}
+function Hidetip(id){ dragtipid = null; if (dragcase==false){
+var tip=svgDocument.getElementById(id);
+tip.setAttributeNS(null,"visibility","hidden");
+}}
+]]></script>
+<defs><linearGradient id="activ1" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" style="stop-color:#FFFF00;stop-opacity:1"/>
+<stop offset="100%" style="stop-color:#FFFFF0;stop-opacity:1"/>
+</linearGradient></defs>
+<g id="2002686832"><polygon points="733,693 1033,693 1033,788 733,788 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="824" y="708">ideal:Domain (1.0e4)</tspan>
+</text>
+<line x1="737" y1="711" x2="1031" y2="711"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="737" y="723">ideal:class (1.0e4) [1] D</tspan>
+<tspan x="737" y="738">ideal:evalue (1.0e4) [1] D</tspan>
+<tspan x="737" y="753">ideal:refdb (1.0e4) [1] D</tspan>
+<tspan x="737" y="768">ideal:target (1.0e4) [1] D</tspan>
+<tspan x="737" y="783">rdf:type (1.0e4) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686876"><polygon points="1796,232 2096,232 2096,282 1796,282 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="1893" y="247">ideal:Chain (3.8e4)</tspan>
+</text>
+<line x1="1800" y1="250" x2="2094" y2="250"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1800" y="262">ideal:chain_id (3.8e4) [*] </tspan>
+<tspan x="1800" y="277">rdf:type (3.8e4) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686755"><polygon points="2143,71 2443,71 2443,136 2143,136 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="2215" y="86">ideal:InteractingPair (2.9e4)</tspan>
+</text>
+<line x1="2147" y1="89" x2="2441" y2="89"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2147" y="101">ideal:chain_id (5.7e4) [*] </tspan>
+<tspan x="2147" y="116">ideal:chain_pair (60) [1] D</tspan>
+<tspan x="2147" y="131">rdf:type (2.9e4) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686821"><polygon points="2205,187 2505,187 2505,366 2205,366 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<polygon points="2202,190 2502,190 2502,369 2202,369 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="2220" y="205">ideal:InteractionCondition et al. G102 (~3.4e4)</tspan>
+</text>
+<line x1="2206" y1="208" x2="2500" y2="208"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2206" y="220">ideal:cluster_id (1.7e4) [1] </tspan>
+<tspan x="2206" y="235">ideal:oligomeric_state (1.7e4) [1] </tspan>
+<tspan x="2206" y="250">ideal:pdb_biomolecule_number (1.7e4) [1] </tspan>
+<tspan x="2206" y="265">rdf:type (3.4e4) [*]  -&gt; IRI</tspan>
+</text>
+<text style="font-family:Arial;font-size:11px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="2206" y="280">ideal:BiologicalUnit (1.7e4)</tspan>
+<tspan x="2206" y="295">ideal:InteractionBiologicalUnit (17)</tspan>
+<tspan x="2206" y="310">ideal:InteractionCondition (1.7e4)</tspan>
+</text>
+</g>
+<g id="2002686722"><polygon points="2083,527 2595,527 2595,592 2083,592 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="2275" y="542">ideal:Condition (1.3e4)</tspan>
+</text>
+<line x1="2087" y1="545" x2="2593" y2="545"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2087" y="557">ideal:crystallization_condition (1.3e4) [*] D -&gt; IRI</tspan>
+<tspan x="2087" y="572">ideal:method (1.3e4) [1] </tspan>
+<tspan x="2087" y="587">rdf:type (1.3e4) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686887"><polygon points="2541,223 2985,223 2985,268 2541,268 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="2698" y="238">ideal:Interaction (1089)</tspan>
+</text>
+<line x1="2545" y1="241" x2="2983" y2="241"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2545" y="253">rdf:type (1089) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686854"><polygon points="2200,822 2500,822 2500,902 2200,902 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="2291" y="837">ideal:Missing (2.1e4)</tspan>
+</text>
+<line x1="2204" y1="840" x2="2498" y2="840"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2204" y="852">ideal:chain_id (2.1e4) [*] </tspan>
+<tspan x="2204" y="867">ideal:identity (2.1e4) [1] D</tspan>
+<tspan x="2204" y="882">ideal:method (2.1e4) [1] </tspan>
+<tspan x="2204" y="897">rdf:type (2.1e4) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686678"><polygon points="2363,675 2663,675 2663,720 2363,720 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="2438" y="690">pdbx-v50:datablock (9769)</tspan>
+</text>
+<line x1="2367" y1="693" x2="2661" y2="693"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2367" y="705">rdf:type (9769) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686667"><polygon points="2795,1035 3095,1035 3095,1089 2795,1089 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="2860" y="1050">ideal:InteractionProtein (2178)</tspan>
+</text>
+<line x1="2799" y1="1053" x2="3093" y2="1053"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2799" y="1065">rdf:type (2178) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686733"><polygon points="1606,84 1906,84 1906,129 1606,129 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="1702" y="99">core:Protein (6189)</tspan>
+</text>
+<line x1="1610" y1="102" x2="1904" y2="102"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1610" y="114">rdf:type (6189) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686865"><polygon points="1454,229 1754,229 1754,274 1454,274 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="1520" y="244">ideal:ProteinReference (1110)</tspan>
+</text>
+<line x1="1458" y1="247" x2="1752" y2="247"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1458" y="259">rdf:type (1110) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686634"><polygon points="1157,416 1457,416 1457,466 1157,466 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="1243" y="431">ideal:LLPS_Info (2078)</tspan>
+</text>
+<line x1="1161" y1="434" x2="1455" y2="434"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1161" y="446">ideal:llps (2078) [1] D</tspan>
+<tspan x="1161" y="461">rdf:type (2078) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686623"><polygon points="1267,325 1523,325 1523,370 1267,370 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="1307" y="340">core:Cellular_Component (133)</tspan>
+</text>
+<line x1="1271" y1="343" x2="1521" y2="343"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1271" y="355">rdf:type (133) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686601"><polygon points="798,563 1098,563 1098,643 798,643 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="892" y="578">ideal:Function (780)</tspan>
+</text>
+<line x1="802" y1="581" x2="1096" y2="581"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="802" y="593">ideal:comment (780) [1] D</tspan>
+<tspan x="802" y="608">ideal:function_type (780) [1] D</tspan>
+<tspan x="802" y="623">ideal:pros_type (780) [1] D</tspan>
+<tspan x="802" y="638">rdf:type (780) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686612"><polygon points="739,360 1039,360 1039,425 739,425 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="832" y="375">ideal:Region (6.8e4)</tspan>
+</text>
+<line x1="743" y1="378" x2="1037" y2="378"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="743" y="390">ideal:chain_id (6.8e4) [*] </tspan>
+<tspan x="743" y="405">ideal:order_disorder (6.8e4) [*] D</tspan>
+<tspan x="743" y="420">rdf:type (6.8e4) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686689"><polygon points="54,291 354,291 354,385 54,385 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="124" y="306">ideal:DisorderLocation (781)</tspan>
+</text>
+<line x1="58" y1="309" x2="352" y2="309"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="58" y="321">rdf:type (781) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686656"><polygon points="2026,943 2326,943 2326,993 2026,993 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="2098" y="958">ideal:InteractionRegion (59)</tspan>
+</text>
+<line x1="2030" y1="961" x2="2324" y2="961"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2030" y="973">ideal:chain_id (59) [*] </tspan>
+<tspan x="2030" y="988">rdf:type (59) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686898"><polygon points="1623,1138 1923,1138 1923,1188 1623,1188 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="1704" y="1153">ideal:Modification (7931)</tspan>
+</text>
+<line x1="1627" y1="1156" x2="1921" y2="1156"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1627" y="1168">ideal:modification_name (7719) [1] D</tspan>
+<tspan x="1627" y="1183">rdf:type (7931) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686645"><polygon points="1040,706 1340,706 1340,751 1040,751 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="1118" y="721">ideal:OrderLocation (781)</tspan>
+</text>
+<line x1="1044" y1="724" x2="1338" y2="724"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1044" y="736">rdf:type (781) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686799"><polygon points="55,1048 355,1048 355,1113 55,1113 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="128" y="1063">faldo:ExactPosition (2.9e5)</tspan>
+</text>
+<line x1="59" y1="1066" x2="353" y2="1066"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="59" y="1078">faldo:position (3.0e5) [*] D</tspan>
+<tspan x="59" y="1093">faldo:reference (2.9e5) [1] D -&gt; IRI</tspan>
+<tspan x="59" y="1108">rdf:type (2.9e5) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686590"><polygon points="208,828 508,828 508,994 208,994 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="301" y="843">faldo:Region (1.5e5)</tspan>
+</text>
+<line x1="212" y1="846" x2="506" y2="846"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="212" y="858">rdf:type (1.5e5) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686810"><polygon points="1477,960 1777,960 1777,1065 1477,1065 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="1578" y="975">ideal:Motif (1190)</tspan>
+</text>
+<line x1="1481" y1="978" x2="1775" y2="978"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1481" y="990">ideal:motif_name (527) [1] D</tspan>
+<tspan x="1481" y="1005">rdf:type (1190) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686700"><polygon points="1566,421 1989,421 1989,869 1566,869 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="1722" y="436">ideal:Protein (1110)</tspan>
+</text>
+<line x1="1570" y1="439" x2="1987" y2="439"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1570" y="451">ideal:function_desc (1110) [1] D</tspan>
+<tspan x="1570" y="466">ideal:idealdate (1110) [1] D</tspan>
+<tspan x="1570" y="481">ideal:name (1110) [1] D</tspan>
+<tspan x="1570" y="496">ideal:pdbdate (1110) [1] D</tspan>
+<tspan x="1570" y="511">ideal:sequence (1110) [1] D</tspan>
+<tspan x="1570" y="526">ideal:sequence_length (1085) [1] D</tspan>
+<tspan x="1570" y="541">ideal:source_organism (1110) [1] D</tspan>
+<tspan x="1570" y="556">ideal:synonym (2287) [*] D</tspan>
+<tspan x="1570" y="571">ideal:uniprotdate (1110) [1] D</tspan>
+<tspan x="1570" y="586">rdf:type (1110) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686777"><polygon points="1764,1504 2064,1504 2064,1569 1764,1569 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="1868" y="1519">rdf:Property (23)</tspan>
+</text>
+<line x1="1768" y1="1522" x2="2062" y2="1522"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1768" y="1534">rdf:type (28) [*]  -&gt; IRI</tspan>
+<tspan x="1768" y="1549">rdfs:label (23) [1] </tspan>
+<tspan x="1768" y="1564">rdfs:subPropertyOf (2) [1] D -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686744"><polygon points="1375,1489 1675,1489 1675,1583 1375,1583 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="1488" y="1504">owl:Class (3)</tspan>
+</text>
+<line x1="1379" y1="1507" x2="1673" y2="1507"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1379" y="1519">owl:unionOf (1) [1] D -&gt; IRI</tspan>
+<tspan x="1379" y="1534">rdf:type (3) [*]  -&gt; IRI</tspan>
+<tspan x="1379" y="1549">rdfs:label (2) [1] </tspan>
+</text>
+</g>
+<g id="2002686579"><polygon points="140,1441 440,1441 440,1551 140,1551 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="244" y="1456">owl:Ontology (1)</tspan>
+</text>
+<line x1="144" y1="1459" x2="438" y2="1459"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="144" y="1471">owl:imports (1) [1] D -&gt; IRI</tspan>
+<tspan x="144" y="1486">owl:priorVersion (1) [1] D -&gt; IRI</tspan>
+<tspan x="144" y="1501">owl:versionInfo (1) [1] D</tspan>
+<tspan x="144" y="1516">rdf:type (1) [*]  -&gt; IRI</tspan>
+<tspan x="144" y="1531">rdfs:comment (1) [1] D</tspan>
+<tspan x="144" y="1546">rdfs:isDefinedBy (3) [*] D -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686788"><polygon points="137,1674 437,1674 437,1754 137,1754 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="248" y="1689">sd:Service (1)</tspan>
+</text>
+<line x1="141" y1="1692" x2="435" y2="1692"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="141" y="1704">rdf:type (1) [*]  -&gt; IRI</tspan>
+<tspan x="141" y="1719">sd:feature (2) [*] D -&gt; IRI</tspan>
+<tspan x="141" y="1734">sd:resultFormat (8) [*] D -&gt; IRI</tspan>
+<tspan x="141" y="1749">sd:supportedLanguage (1) [1] D -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686843"><polygon points="630,1494 930,1494 930,1539 630,1539 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="704" y="1509">owl:AnnotationProperty (5)</tspan>
+</text>
+<line x1="634" y1="1512" x2="928" y2="1512"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="634" y="1524">rdf:type (6) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686711"><polygon points="2141,1506 2441,1506 2441,1573 2141,1573 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="2220" y="1521">owl:OntologyProperty (4)</tspan>
+</text>
+</g>
+<g id="2002686766"><polygon points="2766,488 3066,488 3066,628 2766,628 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="2849" y="503">ideal:Publication (5779)</tspan>
+</text>
+<line x1="2770" y1="506" x2="3064" y2="506"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2770" y="518">ideal:author (5897) [*] D</tspan>
+<tspan x="2770" y="533">ideal:keyword (1) [1] D</tspan>
+<tspan x="2770" y="548">ideal:pages (4595) [*] D</tspan>
+<tspan x="2770" y="563">ideal:publication (5785) [*] D</tspan>
+<tspan x="2770" y="578">ideal:title (5925) [*] D</tspan>
+<tspan x="2770" y="593">ideal:volume (4629) [*] D</tspan>
+<tspan x="2770" y="608">ideal:year (4724) [*] D</tspan>
+<tspan x="2770" y="623">rdf:type (5779) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002686417"><path d="M2259,190 L2259,136 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="2256" y1="142" x2="2259" y2="136"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="2262" y1="142" x2="2259" y2="136"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2127" y="186">ideal:interacting_pair  R</tspan>
+</text>
+</g>
+<g id="2002686437"><path d="M2985,245 L3083,245 3087,247 3089,251 3089,1035 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="3086" y1="1029" x2="3089" y2="1035"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="3092" y1="1029" x2="3089" y2="1035"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2989" y="243">ideal:protein  DR</tspan>
+</text>
+</g>
+<g id="2002686452"><path d="M1989,564 L2083,564 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="2077" y1="561" x2="2083" y2="564"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="2077" y1="567" x2="2083" y2="564"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1993" y="562">ideal:condition  </tspan>
+</text>
+</g>
+<g id="2002686522"><path d="M1761,869 L1761,960 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1758" y1="954" x2="1761" y2="960"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1764" y1="954" x2="1761" y2="960"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1763" y="884">ideal:motif  DR</tspan>
+</text>
+</g>
+<g id="2002686457"><path d="M1764,1536 L1675,1536 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1681" y1="1533" x2="1675" y2="1536"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1681" y1="1539" x2="1675" y2="1536"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1679" y="1549">rdfs:domain  D</tspan>
+<tspan x="1679" y="1564">rdfs:range  D</tspan>
+</text>
+</g>
+<g id="2002686542"><path d="M2202,265 L2096,265 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="2102" y1="262" x2="2096" y2="265"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="2102" y1="268" x2="2096" y2="265"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2123" y="278">ideal:chain  R</tspan>
+</text>
+</g>
+<g id="2002686557"><path d="M2365,527 L2365,369 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="2362" y1="375" x2="2365" y2="369"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="2368" y1="375" x2="2365" y2="369"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2247" y="523">ideal:biological_unit  </tspan>
+</text>
+</g>
+<g id="2002686472"><path d="M2964,1089 L2964,1123 2962,1127 2958,1129 1989,1129 1985,1127 1983,1123 1983,869 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1980" y1="875" x2="1983" y2="869"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1986" y1="875" x2="1983" y2="869"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2966" y="1104">ideal:idp_id  </tspan>
+</text>
+</g>
+<g id="2002686447"><path d="M2595,558 L2766,558 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="2760" y1="555" x2="2766" y2="558"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="2760" y1="561" x2="2766" y2="558"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2599" y="556">ideal:condition_reference  DR</tspan>
+</text>
+</g>
+<g id="2002686492"><path d="M2237,592 L2237,822 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="2234" y1="816" x2="2237" y2="822"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="2240" y1="816" x2="2237" y2="822"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2239" y="607">ideal:missing  DR</tspan>
+</text>
+</g>
+<g id="2002686427"><path d="M2571,268 L2571,527 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="2568" y1="521" x2="2571" y2="527"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="2574" y1="521" x2="2571" y2="527"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2573" y="283">ideal:condition  </tspan>
+</text>
+</g>
+<g id="2002686552"><path d="M2484,592 L2484,675 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="2481" y1="669" x2="2484" y2="675"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="2487" y1="669" x2="2484" y2="675"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2486" y="607">ideal:pdb_id  R</tspan>
+</text>
+</g>
+<g id="2002686507"><path d="M2484,822 L2484,720 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="2481" y1="726" x2="2484" y2="720"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="2487" y1="726" x2="2484" y2="720"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2399" y="818">ideal:pdb_id  R</tspan>
+</text>
+</g>
+<g id="2002686397"><path d="M1900,232 L1900,129 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1897" y1="135" x2="1900" y2="129"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1903" y1="135" x2="1900" y2="129"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1798" y="228">ideal:uniprot_id  R</tspan>
+</text>
+</g>
+<g id="2002686412"><path d="M1876,282 L1876,421 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1873" y1="415" x2="1876" y2="421"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1879" y1="415" x2="1876" y2="421"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1878" y="297">ideal:idp_id  </tspan>
+</text>
+</g>
+<g id="2002686407"><path d="M1790,421 L1790,129 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1787" y1="135" x2="1790" y2="129"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1793" y1="135" x2="1790" y2="129"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1688" y="417">ideal:uniprot_id  R</tspan>
+</text>
+</g>
+<g id="2002686512"><path d="M1680,421 L1680,274 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1677" y1="280" x2="1680" y2="274"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1683" y1="280" x2="1680" y2="274"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1585" y="417">rdfs:seeAlso  DR</tspan>
+</text>
+</g>
+<g id="2002686432"><path d="M1566,449 L1457,449 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1463" y1="446" x2="1457" y2="449"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1463" y1="452" x2="1457" y2="449"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1461" y="462">ideal:llps_info  DR</tspan>
+</text>
+</g>
+<g id="2002686517"><path d="M1326,416 L1326,370 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1323" y1="376" x2="1326" y2="370"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1329" y1="376" x2="1326" y2="370"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1159" y="412">ideal:subcellular_location  DR</tspan>
+</text>
+</g>
+<g id="2002686482"><path d="M1033,360 L1033,16 1035,12 1039,10 2517,10 2521,12 2523,16 2523,527 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="2520" y1="521" x2="2523" y2="527"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="2526" y1="521" x2="2523" y2="527"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="910" y="356">ideal:condition_id  DR</tspan>
+</text>
+</g>
+<g id="2002686562"><path d="M2795,1062 L2194,1062 2190,1060 2188,1056 2188,993 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="2185" y1="999" x2="2188" y2="993"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="2191" y1="999" x2="2188" y2="993"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2638" y="1075">ideal:interaction_region  DR</tspan>
+</text>
+</g>
+<g id="2002686402"><path d="M354,369 L739,369 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="733" y1="366" x2="739" y2="369"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="733" y1="372" x2="739" y2="369"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="358" y="367">ideal:disorder_region_id  D</tspan>
+</text>
+</g>
+<g id="2002686577"><path d="M2064,1536 L2141,1536 "
+style="fill:none;stroke-width:2;stroke:Fuchsia;"/>
+<polygon points="2074,1541 2064,1536 2074,1531 "
+style="fill:Silver;stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2068" y="1534"> </tspan>
+</text>
+</g>
+<g id="2002686527"><path d="M281,994 L281,1048 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="278" y1="1042" x2="281" y2="1048"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="284" y1="1042" x2="281" y2="1048"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="283" y="1009">faldo:end  DR</tspan>
+<tspan x="283" y="1024">faldo:begin  DR</tspan>
+</text>
+</g>
+<g id="2002686532"><path d="M1852,869 L1852,1138 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1849" y1="1132" x2="1852" y2="1138"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1855" y1="1132" x2="1852" y2="1138"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1854" y="884">ideal:modification  DR</tspan>
+</text>
+</g>
+<g id="2002686367"><path d="M798,616 L330,616 326,614 324,610 324,385 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="321" y1="391" x2="324" y2="385"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="327" y1="391" x2="324" y2="385"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="644" y="629">ideal:disorder_location  DR</tspan>
+</text>
+</g>
+<g id="2002686462"><path d="M237,385 L237,828 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="234" y1="822" x2="237" y2="828"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="240" y1="822" x2="237" y2="828"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="239" y="400">ideal:range  R</tspan>
+</text>
+</g>
+<g id="2002686382"><path d="M858,360 L858,199 856,195 852,193 16,193 12,195 10,199 10,884 12,888 16,890 208,890 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="202" y1="887" x2="208" y2="890"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="202" y1="893" x2="208" y2="890"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="779" y="356">ideal:range  R</tspan>
+</text>
+</g>
+<g id="2002686467"><path d="M2369,902 L2369,1353 2367,1357 2363,1359 433,1359 429,1357 427,1353 427,994 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="424" y1="1000" x2="427" y2="994"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="430" y1="1000" x2="427" y2="994"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2371" y="917">ideal:range  R</tspan>
+<tspan x="2371" y="932">ideal:missing_location  DR</tspan>
+</text>
+</g>
+<g id="2002686497"><path d="M1566,484 L1001,484 997,482 995,478 995,425 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="992" y1="431" x2="995" y2="425"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="998" y1="431" x2="995" y2="425"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1473" y="497">ideal:region  DR</tspan>
+</text>
+</g>
+<g id="2002686377"><path d="M1262,706 L1262,536 1260,532 1256,530 840,530 836,528 834,524 834,425 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="831" y1="431" x2="834" y2="425"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="837" y1="431" x2="834" y2="425"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1127" y="702">ideal:order_region_id  D</tspan>
+</text>
+</g>
+<g id="2002686372"><path d="M843,693 L843,643 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="840" y1="649" x2="843" y2="643"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="846" y1="649" x2="843" y2="643"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="762" y="689">ideal:function  </tspan>
+</text>
+</g>
+<g id="2002686392"><path d="M1076,643 L1076,706 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1073" y1="700" x2="1076" y2="706"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1079" y1="700" x2="1076" y2="706"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1078" y="658">ideal:order_location  DR</tspan>
+</text>
+</g>
+<g id="2002686442"><path d="M1566,621 L1098,621 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1104" y1="618" x2="1098" y2="621"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1104" y1="624" x2="1098" y2="621"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1483" y="634">ideal:function  </tspan>
+</text>
+</g>
+<g id="2002686502"><path d="M2101,993 L2101,1290 2099,1294 2095,1296 465,1296 461,1294 459,1290 459,994 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="456" y1="1000" x2="459" y2="994"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="462" y1="1000" x2="459" y2="994"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="2103" y="1008">ideal:range  R</tspan>
+</text>
+</g>
+<g id="2002686387"><path d="M1623,1152 L508,1152 504,1150 502,1146 502,994 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="499" y1="1000" x2="502" y2="994"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="505" y1="1000" x2="502" y2="994"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1456" y="1165">ideal:modification_region  DR</tspan>
+</text>
+</g>
+<g id="2002686477"><path d="M733,716 L318,716 314,718 312,722 312,828 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="309" y1="822" x2="312" y2="828"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="315" y1="822" x2="312" y2="828"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="652" y="729">ideal:range  R</tspan>
+</text>
+</g>
+<g id="2002686547"><path d="M1477,976 L508,976 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="514" y1="973" x2="508" y2="976"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="514" y1="979" x2="508" y2="976"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1350" y="989">ideal:motif_region  DR</tspan>
+</text>
+</g>
+<g id="2002686567"><path d="M1572,869 L1572,916 1570,920 1566,922 508,922 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="514" y1="919" x2="508" y2="922"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="514" y1="925" x2="508" y2="922"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1574" y="884">ideal:dichot_disorder  DR</tspan>
+<tspan x="1574" y="899">ideal:dichot_known_domain  DR</tspan>
+<tspan x="1574" y="914">ideal:dichot_cryptic_domain  DR</tspan>
+</text>
+</g>
+<g id="2002686487"><path d="M1150,751 L1150,859 1148,863 1144,865 508,865 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="514" y1="862" x2="508" y2="865"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="514" y1="868" x2="508" y2="865"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1152" y="766">ideal:range  R</tspan>
+</text>
+</g>
+<g id="2002686572"><path d="M1375,1498 L1242,1498 1238,1496 1236,1492 1236,1468 1238,1464 1242,1462 1490,1462 1494,1464 1496,1468 1496,1489 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="1493" y1="1483" x2="1496" y2="1489"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="1499" y1="1483" x2="1496" y2="1489"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="1244" y="1511">owl:complementOf  DR</tspan>
+</text>
+</g>
+<g id="2002686537"><path d="M143,1674 L143,1642 145,1638 149,1636 288,1636 292,1638 294,1642 294,1674 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="291" y1="1668" x2="294" y2="1674"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="297" y1="1668" x2="294" y2="1674"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="52" y="1655">sd:endpoint  DR</tspan>
+<tspan x="52" y="1670">sd:url  DR</tspan>
+</text>
+</g>
+</svg>

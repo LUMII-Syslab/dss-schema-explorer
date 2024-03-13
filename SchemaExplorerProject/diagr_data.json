@@ -1,0 +1,1230 @@
+{
+    "classes": {
+        "c_6": {
+            "id": "c_6",
+            "id_id": 6,
+            "c_list_id": [
+                6
+            ],
+            "super_classes": [],
+            "used": true,
+            "hasGen": false,
+            "type": "Class",
+            "displayName": "skos:ConceptScheme",
+            "fullName": "skos:ConceptScheme (1)",
+            "sup": [
+                6
+            ],
+            "sub": [
+                6
+            ],
+            "sup0": [],
+            "sub0": [],
+            "atr_list": [
+                {
+                    "p_name": "rdf:type",
+                    "p_id": 39,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 1,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "skos:prefLabel",
+                    "p_id": 40,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 0,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "skos:inScheme",
+                    "p_id": 10,
+                    "type": "in",
+                    "cnt": 2,
+                    "object_cnt": 2,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "class_list": [
+                        2
+                    ],
+                    "class_list2": [
+                        "c_2"
+                    ]
+                },
+                {
+                    "p_name": "skos:topConceptOf",
+                    "p_id": 24,
+                    "type": "in",
+                    "cnt": 2,
+                    "object_cnt": 2,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "class_list": [
+                        2
+                    ],
+                    "class_list2": [
+                        "c_2"
+                    ]
+                }
+            ],
+            "all_atr": [
+                39,
+                40
+            ],
+            "cnt": 1,
+            "gId": "",
+            "atr_string": "rdf:type (1) [1]  -> IRI\nskos:prefLabel (1) [1] "
+        },
+        "c_2": {
+            "id": "c_2",
+            "id_id": 2,
+            "c_list_id": [
+                2
+            ],
+            "super_classes": [],
+            "used": true,
+            "hasGen": false,
+            "type": "Class",
+            "displayName": "skos:Concept",
+            "fullName": "skos:Concept (2)",
+            "sup": [
+                2
+            ],
+            "sub": [
+                2
+            ],
+            "sup0": [],
+            "sub0": [],
+            "atr_list": [
+                {
+                    "p_name": "n2:skill-type",
+                    "p_id": 26,
+                    "type": "in",
+                    "cnt": 9,
+                    "object_cnt": 9,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "class_list": [
+                        10
+                    ],
+                    "class_list2": [
+                        "c_10"
+                    ]
+                },
+                {
+                    "p_name": "rdf:type",
+                    "p_id": 39,
+                    "type": "data",
+                    "cnt": 2,
+                    "object_cnt": 2,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "skos:prefLabel",
+                    "p_id": 40,
+                    "type": "data",
+                    "cnt": 2,
+                    "object_cnt": 0,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "skos:altLabel",
+                    "p_id": 3,
+                    "type": "data",
+                    "cnt": 2,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "skos:inScheme",
+                    "p_id": 10,
+                    "type": "out",
+                    "cnt": 2,
+                    "object_cnt": 2,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "max_cardinality": "1",
+                    "class_list": [
+                        6
+                    ],
+                    "class_list2": [
+                        "c_6"
+                    ],
+                    "object_cnt_dgr": 2
+                },
+                {
+                    "p_name": "skos:topConceptOf",
+                    "p_id": 24,
+                    "type": "out",
+                    "cnt": 2,
+                    "object_cnt": 2,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "max_cardinality": "1",
+                    "class_list": [
+                        6
+                    ],
+                    "class_list2": [
+                        "c_6"
+                    ],
+                    "object_cnt_dgr": 2
+                }
+            ],
+            "all_atr": [
+                39,
+                40,
+                3,
+                10,
+                24
+            ],
+            "cnt": 2,
+            "gId": "",
+            "atr_string": "rdf:type (2) [1]  -> IRI\nskos:altLabel (2) [1] D\nskos:prefLabel (2) [1] "
+        },
+        "c_1": {
+            "id": "c_1",
+            "id_id": 1,
+            "c_list_id": [
+                1
+            ],
+            "super_classes": [],
+            "used": true,
+            "hasGen": false,
+            "type": "Class",
+            "displayName": "foaf:Person",
+            "fullName": "foaf:Person (1)",
+            "sup": [
+                1
+            ],
+            "sub": [
+                1
+            ],
+            "sup0": [],
+            "sub0": [],
+            "atr_list": [
+                {
+                    "p_name": ":aboutPerson",
+                    "p_id": 9,
+                    "type": "in",
+                    "cnt": 1,
+                    "object_cnt": 1,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "class_list": [
+                        9
+                    ],
+                    "class_list2": [
+                        "c_9"
+                    ]
+                },
+                {
+                    "p_name": "foaf:title",
+                    "p_id": 15,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 0,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "foaf:lastName",
+                    "p_id": 35,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "foaf:birthday",
+                    "p_id": 37,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "foaf:firstName",
+                    "p_id": 19,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "foaf:homepage",
+                    "p_id": 38,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 1,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "foaf:account",
+                    "p_id": 31,
+                    "type": "data",
+                    "cnt": 2,
+                    "object_cnt": 2,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "*",
+                    "class_list": []
+                },
+                {
+                    "p_name": "rdf:type",
+                    "p_id": 39,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 1,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                }
+            ],
+            "all_atr": [
+                15,
+                35,
+                37,
+                19,
+                38,
+                31,
+                39
+            ],
+            "cnt": 1,
+            "gId": "",
+            "atr_string": "foaf:account (2) [*] D -> IRI\nfoaf:birthday (1) [1] D\nfoaf:firstName (1) [1] D\nfoaf:homepage (1) [1]  -> IRI\nfoaf:lastName (1) [1] D\nfoaf:title (1) [1] \nrdf:type (1) [1]  -> IRI"
+        },
+        "c_10": {
+            "id": "c_10",
+            "id_id": 10,
+            "c_list_id": [
+                10
+            ],
+            "super_classes": [],
+            "used": true,
+            "hasGen": false,
+            "type": "Class",
+            "displayName": ":Skill",
+            "fullName": ":Skill (9)",
+            "sup": [
+                10
+            ],
+            "sub": [
+                10
+            ],
+            "sup0": [],
+            "sub0": [],
+            "atr_list": [
+                {
+                    "p_name": ":skillName",
+                    "p_id": 33,
+                    "type": "data",
+                    "cnt": 9,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": ":hasSkill",
+                    "p_id": 8,
+                    "type": "in",
+                    "cnt": 9,
+                    "object_cnt": 9,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "class_list": [
+                        9
+                    ],
+                    "class_list2": [
+                        "c_9"
+                    ]
+                },
+                {
+                    "p_name": "n1:tags",
+                    "p_id": 22,
+                    "type": "data",
+                    "cnt": 91,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "*",
+                    "class_list": []
+                },
+                {
+                    "p_name": "n2:skill-type",
+                    "p_id": 26,
+                    "type": "out",
+                    "cnt": 9,
+                    "object_cnt": 9,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "max_cardinality": "1",
+                    "class_list": [
+                        2
+                    ],
+                    "class_list2": [
+                        "c_2"
+                    ],
+                    "object_cnt_dgr": 9
+                },
+                {
+                    "p_name": "rdf:type",
+                    "p_id": 39,
+                    "type": "data",
+                    "cnt": 9,
+                    "object_cnt": 9,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                }
+            ],
+            "all_atr": [
+                33,
+                22,
+                26,
+                39
+            ],
+            "cnt": 9,
+            "gId": "",
+            "atr_string": ":skillName (9) [1] D\nn1:tags (91) [*] D\nrdf:type (9) [1]  -> IRI"
+        },
+        "c_9": {
+            "id": "c_9",
+            "id_id": 9,
+            "c_list_id": [
+                9
+            ],
+            "super_classes": [],
+            "used": true,
+            "hasGen": false,
+            "type": "Class",
+            "displayName": ":CV",
+            "fullName": ":CV (1)",
+            "sup": [
+                9
+            ],
+            "sub": [
+                9
+            ],
+            "sup0": [],
+            "sub0": [],
+            "atr_list": [
+                {
+                    "p_name": ":cvDescription",
+                    "p_id": 18,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": ":hasWorkHistory",
+                    "p_id": 25,
+                    "type": "out",
+                    "cnt": 10,
+                    "object_cnt": 10,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "max_cardinality": "*",
+                    "class_list": [
+                        5
+                    ],
+                    "class_list2": [
+                        "c_5"
+                    ],
+                    "object_cnt_dgr": 10
+                },
+                {
+                    "p_name": ":hasSkill",
+                    "p_id": 8,
+                    "type": "out",
+                    "cnt": 9,
+                    "object_cnt": 9,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "max_cardinality": "*",
+                    "class_list": [
+                        10
+                    ],
+                    "class_list2": [
+                        "c_10"
+                    ],
+                    "object_cnt_dgr": 9
+                },
+                {
+                    "p_name": ":hasOtherInfo",
+                    "p_id": 20,
+                    "type": "out",
+                    "cnt": 7,
+                    "object_cnt": 7,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "max_cardinality": "*",
+                    "class_list": [
+                        3
+                    ],
+                    "class_list2": [
+                        "c_3"
+                    ],
+                    "object_cnt_dgr": 7
+                },
+                {
+                    "p_name": ":hasEducation",
+                    "p_id": 4,
+                    "type": "out",
+                    "cnt": 1,
+                    "object_cnt": 1,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "max_cardinality": "1",
+                    "class_list": [
+                        8
+                    ],
+                    "class_list2": [
+                        "c_8"
+                    ],
+                    "object_cnt_dgr": 1
+                },
+                {
+                    "p_name": ":aboutPerson",
+                    "p_id": 9,
+                    "type": "out",
+                    "cnt": 1,
+                    "object_cnt": 1,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "max_cardinality": "1",
+                    "class_list": [
+                        1
+                    ],
+                    "class_list2": [
+                        "c_1"
+                    ],
+                    "object_cnt_dgr": 1
+                },
+                {
+                    "p_name": "rdf:type",
+                    "p_id": 39,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 1,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                }
+            ],
+            "all_atr": [
+                18,
+                25,
+                8,
+                20,
+                4,
+                9,
+                39
+            ],
+            "cnt": 1,
+            "gId": "",
+            "atr_string": ":cvDescription (1) [1] D\nrdf:type (1) [1]  -> IRI"
+        },
+        "c_8": {
+            "id": "c_8",
+            "id_id": 8,
+            "c_list_id": [
+                8
+            ],
+            "super_classes": [],
+            "used": true,
+            "hasGen": false,
+            "type": "Class",
+            "displayName": ":Education",
+            "fullName": ":Education (1)",
+            "sup": [
+                8
+            ],
+            "sub": [
+                8
+            ],
+            "sup0": [],
+            "sub0": [],
+            "atr_list": [
+                {
+                    "p_name": ":eduGradDate",
+                    "p_id": 12,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": ":eduDescription",
+                    "p_id": 11,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": ":eduStartDate",
+                    "p_id": 28,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": ":hasEducation",
+                    "p_id": 4,
+                    "type": "in",
+                    "cnt": 1,
+                    "object_cnt": 1,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "class_list": [
+                        9
+                    ],
+                    "class_list2": [
+                        "c_9"
+                    ]
+                },
+                {
+                    "p_name": ":studiedIn",
+                    "p_id": 5,
+                    "type": "out",
+                    "cnt": 1,
+                    "object_cnt": 1,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "max_cardinality": "1",
+                    "class_list": [
+                        4
+                    ],
+                    "class_list2": [
+                        "c_4"
+                    ],
+                    "object_cnt_dgr": 1
+                },
+                {
+                    "p_name": "rdf:type",
+                    "p_id": 39,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 1,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                }
+            ],
+            "all_atr": [
+                12,
+                11,
+                28,
+                5,
+                39
+            ],
+            "cnt": 1,
+            "gId": "",
+            "atr_string": ":eduDescription (1) [1] D\n:eduGradDate (1) [1] D\n:eduStartDate (1) [1] D\nrdf:type (1) [1]  -> IRI"
+        },
+        "c_7": {
+            "id": "c_7",
+            "id_id": 7,
+            "c_list_id": [
+                7
+            ],
+            "super_classes": [],
+            "used": true,
+            "hasGen": false,
+            "type": "Class",
+            "displayName": ":Company",
+            "fullName": ":Company (10)",
+            "sup": [
+                7
+            ],
+            "sub": [
+                7
+            ],
+            "sup0": [],
+            "sub0": [],
+            "atr_list": [
+                {
+                    "p_name": ":employedIn",
+                    "p_id": 29,
+                    "type": "in",
+                    "cnt": 10,
+                    "object_cnt": 10,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "class_list": [
+                        5
+                    ],
+                    "class_list2": [
+                        "c_5"
+                    ]
+                },
+                {
+                    "p_name": "foaf:name",
+                    "p_id": 1,
+                    "type": "data",
+                    "cnt": 10,
+                    "object_cnt": 0,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "rdf:type",
+                    "p_id": 39,
+                    "type": "data",
+                    "cnt": 10,
+                    "object_cnt": 10,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                }
+            ],
+            "all_atr": [
+                1,
+                39
+            ],
+            "cnt": 10,
+            "gId": "",
+            "atr_string": "foaf:name (10) [1] \nrdf:type (10) [1]  -> IRI"
+        },
+        "c_5": {
+            "id": "c_5",
+            "id_id": 5,
+            "c_list_id": [
+                5
+            ],
+            "super_classes": [],
+            "used": true,
+            "hasGen": false,
+            "type": "Class",
+            "displayName": ":WorkHistory",
+            "fullName": ":WorkHistory (10)",
+            "sup": [
+                5
+            ],
+            "sub": [
+                5
+            ],
+            "sup0": [],
+            "sub0": [],
+            "atr_list": [
+                {
+                    "p_name": ":jobDescription",
+                    "p_id": 2,
+                    "type": "data",
+                    "cnt": 10,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": ":startDate",
+                    "p_id": 27,
+                    "type": "data",
+                    "cnt": 10,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": ":isCurrent",
+                    "p_id": 13,
+                    "type": "data",
+                    "cnt": 10,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": ":jobTitle",
+                    "p_id": 14,
+                    "type": "data",
+                    "cnt": 10,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": ":endDate",
+                    "p_id": 23,
+                    "type": "data",
+                    "cnt": 9,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": ":hasWorkHistory",
+                    "p_id": 25,
+                    "type": "in",
+                    "cnt": 10,
+                    "object_cnt": 10,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "class_list": [
+                        9
+                    ],
+                    "class_list2": [
+                        "c_9"
+                    ]
+                },
+                {
+                    "p_name": ":employedIn",
+                    "p_id": 29,
+                    "type": "out",
+                    "cnt": 10,
+                    "object_cnt": 10,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "max_cardinality": "1",
+                    "class_list": [
+                        7
+                    ],
+                    "class_list2": [
+                        "c_7"
+                    ],
+                    "object_cnt_dgr": 10
+                },
+                {
+                    "p_name": "rdf:type",
+                    "p_id": 39,
+                    "type": "data",
+                    "cnt": 10,
+                    "object_cnt": 10,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                }
+            ],
+            "all_atr": [
+                2,
+                27,
+                13,
+                14,
+                23,
+                29,
+                39
+            ],
+            "cnt": 10,
+            "gId": "",
+            "atr_string": ":endDate (9) [1] D\n:isCurrent (10) [1] D\n:jobDescription (10) [1] D\n:jobTitle (10) [1] D\n:startDate (10) [1] D\nrdf:type (10) [1]  -> IRI"
+        },
+        "c_4": {
+            "id": "c_4",
+            "id_id": 4,
+            "c_list_id": [
+                4
+            ],
+            "super_classes": [],
+            "used": true,
+            "hasGen": false,
+            "type": "Class",
+            "displayName": ":EducationalOrg",
+            "fullName": ":EducationalOrg (1)",
+            "sup": [
+                4
+            ],
+            "sub": [
+                4
+            ],
+            "sup0": [],
+            "sub0": [],
+            "atr_list": [
+                {
+                    "p_name": ":studiedIn",
+                    "p_id": 5,
+                    "type": "in",
+                    "cnt": 1,
+                    "object_cnt": 1,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "class_list": [
+                        8
+                    ],
+                    "class_list2": [
+                        "c_8"
+                    ]
+                },
+                {
+                    "p_name": "foaf:name",
+                    "p_id": 1,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 0,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "rdf:type",
+                    "p_id": 39,
+                    "type": "data",
+                    "cnt": 1,
+                    "object_cnt": 1,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                }
+            ],
+            "all_atr": [
+                1,
+                39
+            ],
+            "cnt": 1,
+            "gId": "",
+            "atr_string": "foaf:name (1) [1] \nrdf:type (1) [1]  -> IRI"
+        },
+        "c_3": {
+            "id": "c_3",
+            "id_id": 3,
+            "c_list_id": [
+                3
+            ],
+            "super_classes": [],
+            "used": true,
+            "hasGen": false,
+            "type": "Class",
+            "displayName": ":OtherInfo",
+            "fullName": ":OtherInfo (13)",
+            "sup": [
+                3
+            ],
+            "sub": [
+                3
+            ],
+            "sup0": [],
+            "sub0": [],
+            "atr_list": [
+                {
+                    "p_name": ":otherInfoType",
+                    "p_id": 32,
+                    "type": "data",
+                    "cnt": 13,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": ":otherInfoDescription",
+                    "p_id": 16,
+                    "type": "data",
+                    "cnt": 6,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": ":hasOtherInfo",
+                    "p_id": 20,
+                    "type": "in",
+                    "cnt": 7,
+                    "object_cnt": 7,
+                    "is_domain": "D",
+                    "is_range": "R",
+                    "class_list": [
+                        9
+                    ],
+                    "class_list2": [
+                        "c_9"
+                    ]
+                },
+                {
+                    "p_name": "foaf:title",
+                    "p_id": 15,
+                    "type": "data",
+                    "cnt": 7,
+                    "object_cnt": 0,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "foaf:homepage",
+                    "p_id": 38,
+                    "type": "data",
+                    "cnt": 6,
+                    "object_cnt": 6,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "rdf:type",
+                    "p_id": 39,
+                    "type": "data",
+                    "cnt": 13,
+                    "object_cnt": 13,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                }
+            ],
+            "all_atr": [
+                32,
+                16,
+                15,
+                38,
+                39
+            ],
+            "cnt": 13,
+            "gId": "",
+            "atr_string": ":otherInfoDescription (6) [1] D\n:otherInfoType (13) [1] D\nfoaf:homepage (6) [1]  -> IRI\nfoaf:title (7) [1] \nrdf:type (13) [1]  -> IRI"
+        },
+        "c_11": {
+            "id": "c_11",
+            "id_id": 11,
+            "c_list_id": [
+                11
+            ],
+            "super_classes": [],
+            "used": true,
+            "hasGen": false,
+            "type": "Class",
+            "displayName": "nfo:FileDataObject",
+            "fullName": "nfo:FileDataObject (3)",
+            "sup": [
+                11
+            ],
+            "sub": [
+                11
+            ],
+            "sup0": [],
+            "sub0": [],
+            "atr_list": [
+                {
+                    "p_name": "dbo:fileExtension",
+                    "p_id": 21,
+                    "type": "data",
+                    "cnt": 3,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "dct:created",
+                    "p_id": 34,
+                    "type": "data",
+                    "cnt": 3,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "dct:format",
+                    "p_id": 30,
+                    "type": "data",
+                    "cnt": 3,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "dct:modified",
+                    "p_id": 17,
+                    "type": "data",
+                    "cnt": 3,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "n1:uuid",
+                    "p_id": 36,
+                    "type": "data",
+                    "cnt": 3,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "nfo:fileName",
+                    "p_id": 7,
+                    "type": "data",
+                    "cnt": 3,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "nfo:fileSize",
+                    "p_id": 6,
+                    "type": "data",
+                    "cnt": 3,
+                    "object_cnt": 0,
+                    "is_domain": "D",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                },
+                {
+                    "p_name": "rdf:type",
+                    "p_id": 39,
+                    "type": "data",
+                    "cnt": 3,
+                    "object_cnt": 3,
+                    "is_domain": "",
+                    "is_range": "",
+                    "max_cardinality": "1",
+                    "class_list": []
+                }
+            ],
+            "all_atr": [
+                21,
+                34,
+                30,
+                17,
+                36,
+                7,
+                6,
+                39
+            ],
+            "cnt": 3,
+            "gId": "",
+            "atr_string": "dbo:fileExtension (3) [1] D\ndct:created (3) [1] D\ndct:format (3) [1] D\ndct:modified (3) [1] D\nn1:uuid (3) [1] D\nnfo:fileName (3) [1] D\nnfo:fileSize (3) [1] D\nrdf:type (3) [1]  -> IRI"
+        }
+    },
+    "assoc": {
+        "c_2_c_6": {
+            "from": "c_2",
+            "to": "c_6",
+            "removed": false,
+            "string": "skos:inScheme  DR\nskos:topConceptOf  DR"
+        },
+        "c_10_c_2": {
+            "from": "c_10",
+            "to": "c_2",
+            "removed": false,
+            "string": "n2:skill-type  DR"
+        },
+        "c_9_c_5": {
+            "from": "c_9",
+            "to": "c_5",
+            "removed": false,
+            "string": ":hasWorkHistory  DR"
+        },
+        "c_9_c_10": {
+            "from": "c_9",
+            "to": "c_10",
+            "removed": false,
+            "string": ":hasSkill  DR"
+        },
+        "c_9_c_3": {
+            "from": "c_9",
+            "to": "c_3",
+            "removed": false,
+            "string": ":hasOtherInfo  DR"
+        },
+        "c_9_c_8": {
+            "from": "c_9",
+            "to": "c_8",
+            "removed": false,
+            "string": ":hasEducation  DR"
+        },
+        "c_9_c_1": {
+            "from": "c_9",
+            "to": "c_1",
+            "removed": false,
+            "string": ":aboutPerson  DR"
+        },
+        "c_8_c_4": {
+            "from": "c_8",
+            "to": "c_4",
+            "removed": false,
+            "string": ":studiedIn  DR"
+        },
+        "c_5_c_7": {
+            "from": "c_5",
+            "to": "c_7",
+            "removed": false,
+            "string": ":employedIn  DR"
+        }
+    },
+    "lines": {},
+    "schema": "bittich_be",
+    "info": "11 classes in the diagram\nExclude owl:, rdf:, rdfs:\nClasses of all sizes\nDisconnect prop > 7 \nBasic grouping (diff under 5)\nAugsts līdzības līmenis\nSavelk kopā vispārināšanas virknes",
+    "type": "makeSuperDiagr"
+}

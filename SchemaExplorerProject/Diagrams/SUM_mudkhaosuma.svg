@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+ width="1197" height="672" viewBox="0 0 1197 672">
+ onmousemove="movetip(evt)" onmouseup="endmove()">
+<rect x="0" y="0" width="100%" height="100%" style="fill:White;"/>
+<script type="application/ecmascript"> <![CDATA[
+var dragtipid = null; var dragcase = false; function init(evt){
+if (window.svgDocument==null) svgDocument = evt.target.ownerDocument;
+}
+function movetip(evt){if (dragtipid!=null){ dragcase = true;
+var tip=svgDocument.getElementById(dragtipid);
+tip.setAttributeNS(null,"x",evt.clientX-2);
+tip.setAttributeNS(null,"y",evt.clientY-2);
+}}
+function endmove(){dragtipid = null;}
+function startmove(evt,id){dragtipid = id; dragcase = false;
+var tip=svgDocument.getElementById(dragtipid);
+tip.setAttributeNS(null,"x",evt.clientX-2);
+tip.setAttributeNS(null,"y",evt.clientY-2);
+}
+function Showtip(evt,id){ dragtipid = null;
+var tip=svgDocument.getElementById(id);
+var vis=tip.getAttributeNS(null,"visibility");
+if (vis=="hidden"){
+tip.setAttributeNS(null,"x",evt.clientX-2);
+tip.setAttributeNS(null,"y",evt.clientY-2);
+tip.setAttributeNS(null,"visibility","visible");
+}}
+function Hidetip(id){ dragtipid = null; if (dragcase==false){
+var tip=svgDocument.getElementById(id);
+tip.setAttributeNS(null,"visibility","hidden");
+}}
+]]></script>
+<defs><linearGradient id="activ1" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" style="stop-color:#FFFF00;stop-opacity:1"/>
+<stop offset="100%" style="stop-color:#FFFFF0;stop-opacity:1"/>
+</linearGradient></defs>
+<g id="2002683385"><polygon points="822,206 1187,206 1187,662 822,662 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="933" y="221">e-lion:Assignment (1343)</tspan>
+</text>
+<line x1="826" y1="224" x2="1185" y2="224"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="826" y="236">e-lion:assignmentAllowSubmissionsFromDate (1343) [1] D</tspan>
+<tspan x="826" y="251">e-lion:assignmentAlwaysShowDescription (1343) [1] D</tspan>
+<tspan x="826" y="266">e-lion:assignmentAttemptReopenMethod (1343) [1] D</tspan>
+<tspan x="826" y="281">e-lion:assignmentBlindMarking (1343) [1] D</tspan>
+<tspan x="826" y="296">e-lion:assignmentCompletionSubmit (1343) [1] D</tspan>
+<tspan x="826" y="311">e-lion:assignmentCutoffDate (1343) [1] D</tspan>
+<tspan x="826" y="326">e-lion:assignmentDueDate (1343) [1] D</tspan>
+<tspan x="826" y="341">e-lion:assignmentGrade (1343) [1] D</tspan>
+<tspan x="826" y="356">e-lion:assignmentId (1343) [1] D</tspan>
+<tspan x="826" y="371">e-lion:assignmentIntro (1343) [1] D</tspan>
+<tspan x="826" y="386">e-lion:assignmentIntroFormat (1343) [1] D</tspan>
+<tspan x="826" y="401">e-lion:assignmentMarkingAllocation (1343) [1] D</tspan>
+<tspan x="826" y="416">e-lion:assignmentMarkingWorkflow (1343) [1] D</tspan>
+<tspan x="826" y="431">e-lion:assignmentMaxAttempts (1343) [1] D</tspan>
+<tspan x="826" y="446">e-lion:assignmentName (1343) [1] D</tspan>
+<tspan x="826" y="461">e-lion:assignmentNoSubmissions (1343) [1] D</tspan>
+<tspan x="826" y="476">e-lion:assignmentRequireAllTeamMembersSubmit (1343) [1] D</tspan>
+<tspan x="826" y="491">e-lion:assignmentRequireSubmissionStatement (1343) [1] D</tspan>
+<tspan x="826" y="506">e-lion:assignmentRevealIdenties (1343) [1] D</tspan>
+<tspan x="826" y="521">e-lion:assignmentSendLateNotifications (1343) [1] D</tspan>
+<tspan x="826" y="536">e-lion:assignmentSendNotifications (1343) [1] D</tspan>
+<tspan x="826" y="551">e-lion:assignmentSendStudentNotifications (1343) [1] D</tspan>
+<tspan x="826" y="566">e-lion:assignmentSubmissionsDrafts (1343) [1] D</tspan>
+<tspan x="826" y="581">e-lion:assignmentTeamSubmission (1343) [1] D</tspan>
+<tspan x="826" y="596">e-lion:assignmentTeamSubmissionsGroupingId (1343) [1] D</tspan>
+<tspan x="826" y="611">e-lion:assignmentTimeModified (1343) [1] D</tspan>
+<tspan x="826" y="626">e-lion:hasCourse (1343) [1] D -&gt; IRI</tspan>
+<tspan x="826" y="641">rdf:type (1343) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002683363"><polygon points="834,47 1134,47 1134,92 834,92 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="908" y="62">owl:AnnotationProperty (5)</tspan>
+</text>
+<line x1="838" y1="65" x2="1132" y2="65"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="838" y="77">rdf:type (6) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002683330"><polygon points="467,194 767,194 767,259 467,259 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="571" y="209">rdf:Property (23)</tspan>
+</text>
+<line x1="471" y1="212" x2="765" y2="212"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="471" y="224">rdf:type (28) [*]  -&gt; IRI</tspan>
+<tspan x="471" y="239">rdfs:label (23) [1] </tspan>
+<tspan x="471" y="254">rdfs:subPropertyOf (2) [1] D -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002683319"><polygon points="41,180 341,180 341,245 41,245 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="154" y="195">owl:Class (3)</tspan>
+</text>
+<line x1="45" y1="198" x2="339" y2="198"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="45" y="210">owl:unionOf (1) [1] D -&gt; IRI</tspan>
+<tspan x="45" y="225">rdf:type (3) [*]  -&gt; IRI</tspan>
+<tspan x="45" y="240">rdfs:label (2) [1] </tspan>
+</text>
+</g>
+<g id="2002683352"><polygon points="466,318 766,318 766,363 466,363 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="545" y="333">owl:OntologyProperty (4)</tspan>
+</text>
+</g>
+<g id="2002683374"><polygon points="36,16 336,16 336,126 36,126 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="140" y="31">owl:Ontology (1)</tspan>
+</text>
+<line x1="40" y1="34" x2="334" y2="34"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="40" y="46">owl:imports (1) [1] D -&gt; IRI</tspan>
+<tspan x="40" y="61">owl:priorVersion (1) [1] D -&gt; IRI</tspan>
+<tspan x="40" y="76">owl:versionInfo (1) [1] D</tspan>
+<tspan x="40" y="91">rdf:type (1) [*]  -&gt; IRI</tspan>
+<tspan x="40" y="106">rdfs:comment (1) [1] D</tspan>
+<tspan x="40" y="121">rdfs:isDefinedBy (3) [*] D -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002683396"><polygon points="470,41 770,41 770,121 470,121 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="581" y="56">sd:Service (1)</tspan>
+</text>
+<line x1="474" y1="59" x2="768" y2="59"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="474" y="71">rdf:type (1) [*]  -&gt; IRI</tspan>
+<tspan x="474" y="86">sd:feature (2) [*] D -&gt; IRI</tspan>
+<tspan x="474" y="101">sd:resultFormat (8) [*] D -&gt; IRI</tspan>
+<tspan x="474" y="116">sd:supportedLanguage (1) [1] D -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002683341"><polygon points="275,444 575,444 575,599 275,599 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="352" y="459">e-lion:Submission (2.8e4)</tspan>
+</text>
+<line x1="279" y1="462" x2="573" y2="462"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="279" y="474">e-lion:belongsUser (2.8e4) [1] D -&gt; IRI</tspan>
+<tspan x="279" y="489">e-lion:submissionAttempNumber (2.8e4) [1] D</tspan>
+<tspan x="279" y="504">e-lion:submissionGroupId (2.8e4) [1] D</tspan>
+<tspan x="279" y="519">e-lion:submissionId (2.8e4) [1] D</tspan>
+<tspan x="279" y="534">e-lion:submissionLatest (2.8e4) [1] D</tspan>
+<tspan x="279" y="549">e-lion:submissionStatus (2.8e4) [1] D</tspan>
+<tspan x="279" y="564">e-lion:submissionTimeCreated (2.8e4) [1] D</tspan>
+<tspan x="279" y="579">e-lion:submissionTimeModified (2.8e4) [1] D</tspan>
+<tspan x="279" y="594">rdf:type (2.8e4) [*]  -&gt; IRI</tspan>
+</text>
+</g>
+<g id="2002683317"><path d="M632,259 L632,318 "
+style="fill:none;stroke-width:2;stroke:Fuchsia;"/>
+<polygon points="637,269 632,259 627,269 "
+style="fill:Silver;stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="634" y="274"> </tspan>
+</text>
+</g>
+<g id="2002683307"><path d="M470,81 L375,81 371,79 369,75 369,27 371,23 375,21 581,21 585,23 587,27 587,41 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="584" y1="35" x2="587" y2="41"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="590" y1="35" x2="587" y2="41"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="377" y="94">sd:url  DR</tspan>
+<tspan x="377" y="109">sd:endpoint  DR</tspan>
+</text>
+</g>
+<g id="2002683312"><path d="M467,213 L341,213 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="347" y1="210" x2="341" y2="213"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="347" y1="216" x2="341" y2="213"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="382" y="226">rdfs:domain  D</tspan>
+<tspan x="382" y="241">rdfs:range  D</tspan>
+</text>
+</g>
+<g id="2002683297"><path d="M118,245 L118,281 120,285 124,287 300,287 304,285 306,281 306,245 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="303" y1="251" x2="306" y2="245"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="309" y1="251" x2="306" y2="245"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="120" y="260">owl:complementOf  DR</tspan>
+</text>
+</g>
+<g id="2002683302"><path d="M575,506 L822,506 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="816" y1="503" x2="822" y2="506"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="816" y1="509" x2="822" y2="506"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="579" y="504">e-lion:belongAssignment  DR</tspan>
+</text>
+</g>
+</svg>
