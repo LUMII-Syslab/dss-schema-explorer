@@ -24,7 +24,7 @@ The **TDA tool** has been developed at Institute of Mathematics and Computer Sci
 ## Data preparation
 
 1. Data preparation is done in the **ViziQuer** tool. See https://viziquer.lumii.lv for the tool description.
-1. Export parameters are set in the form.
+1. Export parameters are set in the form, which is opened by pressing the 'Data Schema' button in Diagrams view.
 1. Data preparation time depends on the number of classes and properties, the results are file `diagr_data.json`.
 1. This file should be copied into the SchemaExplorerProject, replacing existing file there.
 
