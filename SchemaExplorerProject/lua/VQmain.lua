@@ -34,6 +34,7 @@ function MakeDiagram_json()
 			end
 		end
 	else
+		table_representation.SH['c0'] = { compartments = {  A6 = data.namespaces, Type = 'Data' }}
 		for k,el in pairs(data.classes) do
 			if ( el.used ) then -- and el.gId ~= ""
 				if ( string.len(el.atr_string) > 3000 ) then
@@ -43,15 +44,15 @@ function MakeDiagram_json()
 					el.type = 'Class'
 				end
 				if ( el.type == 'Abstract') then
-					table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, Type = el.type, A6 = el.atr_string2 }}
+					table_representation.SH[k] = { compartments = { name = el.fullNameD, A4 = el.atr_string, Type = el.type, A6 = el.atr_string2 }}
 				else
 					if ( el.sub_classes_clasif_string ~= "" and el.sub_classes_clasif_string ~= nil) then
-						table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, Type = el.type,  A6 = el.atr_string2 }}
+						table_representation.SH[k] = { compartments = { name = el.fullNameD, A4 = el.atr_string, Type = el.type,  A6 = el.atr_string2 }}
 						table_representation.SH[k..'_sub'] = { compartments = { A5 = el.sub_classes_clasif_string, Type = 'SubCat'}}
 						table_representation.Gen[k..'_sub_gen'] = { source = k, target = k..'_sub', compartments = { Val = " "}}
 					end	
 					if ( el.sub_classes_string ~= "" and el.sub_classes_string ~= nil) then
-						table_representation.SH[k] = { compartments = { name = el.fullName,  A1 = k.."_1", A4 = el.atr_string, Type = el.type,  A6 = el.atr_string2 }}
+						table_representation.SH[k] = { compartments = { name = el.fullNameD,  A1 = k.."_1", A4 = el.atr_string, Type = el.type,  A6 = el.atr_string2 }}
 						table_representation.SH[k..'_sub'] = { compartments = { A5 = el.sub_classes_string, A1 = k.."_3",  Type = 'Sub'}}
 						table_representation.Gen[k..'_sub_gen'] = { source = k, target = k..'_sub', compartments = { Val = " "}}	
 					end	
@@ -61,10 +62,10 @@ function MakeDiagram_json()
 						else
 							el.type = 'SubCat'
 						end
-						table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, A6 = el.atr_string2, A5 = el.sub_classes_group_string, Type = el.type }}
+						table_representation.SH[k] = { compartments = { name = el.fullNameD, A4 = el.atr_string, A6 = el.atr_string2, A5 = el.sub_classes_group_string, Type = el.type }}
 					end	
 					if ( table_representation.SH[k] == nil) then --if ( el.sub_classes_clasif_string == "" and el.sub_classes_string == "" and el.sub_classes_group_string == "") then
-						table_representation.SH[k] = { compartments = { name = el.fullName, A4 = el.atr_string, A6 = el.atr_string2, Type = el.type}}
+						table_representation.SH[k] = { compartments = { name = el.fullNameD, A4 = el.atr_string, A6 = el.atr_string2, Type = el.type}}
 						--table_representation.SH[k] = { compartments = { name = el.fullName, A1 = "data_prop ".. el.data_prop .. "; object prop ".. el.object_prop, A4 = el.atr_string, A5 = el.sub_classes_string }}
 					end
 				end
