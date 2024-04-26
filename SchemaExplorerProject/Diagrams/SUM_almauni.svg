@@ -3,7 +3,7 @@
 "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
- width="1029" height="643" viewBox="0 0 1029 643">
+ width="875" height="469" viewBox="0 0 875 469">
  onmousemove="movetip(evt)" onmouseup="endmove()">
 <rect x="0" y="0" width="100%" height="100%" style="fill:White;"/>
 <script type="application/ecmascript"> <![CDATA[
@@ -38,210 +38,196 @@ tip.setAttributeNS(null,"visibility","hidden");
 <stop offset="0%" style="stop-color:#FFFF00;stop-opacity:1"/>
 <stop offset="100%" style="stop-color:#FFFFF0;stop-opacity:1"/>
 </linearGradient></defs>
-<g id="2002682334"><polygon points="122,41 422,41 422,136 122,136 "
-style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
-<polygon points="119,44 419,44 419,139 119,139 "
+<g id="2002719213"><polygon points="42,414 245,414 245,459 42,459 "
 style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
-<tspan x="128" y="59">skos:Concept or owl:NamedIndividual G101 (510)</tspan>
+<tspan x="72" y="429">owl:OntologyProperty (4)</tspan>
 </text>
-<line x1="123" y1="62" x2="417" y2="62"
+</g>
+<g id="2002719224"><polygon points="429,204 729,204 729,329 429,329 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<polygon points="426,207 726,207 726,332 426,332 "
+style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
+<tspan x="435" y="222">skos:Concept or owl:NamedIndividual G101 (510)</tspan>
+</text>
+<line x1="430" y1="225" x2="724" y2="225"
  style="stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="123" y="74">rdf:type (3060) [*]  -&gt; IRI</tspan>
-<tspan x="123" y="89">skos:definition (1251) [1] D -&gt; IRI</tspan>
-<tspan x="123" y="104">skos:prefLabel (2040) [*] D</tspan>
+<tspan x="430" y="237">rdf:type (3060) [*]  -&gt; IRI</tspan>
+<tspan x="430" y="252">skos:definition (1251) [1] D -&gt; IRI</tspan>
+<tspan x="430" y="267">skos:prefLabel (2040) [*] D</tspan>
+<tspan x="430" y="282">&lt;&gt; skos:broader  DR</tspan>
+<tspan x="430" y="297">&lt;&gt; skos:related  D</tspan>
 </text>
 <text style="font-family:Arial;font-size:11px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
-<tspan x="123" y="119">owl:NamedIndividual (510)</tspan>
-<tspan x="123" y="134">skos:Concept (510)</tspan>
+<tspan x="430" y="312">owl:NamedIndividual (510)</tspan>
+<tspan x="430" y="327">skos:Concept (510)</tspan>
 </text>
 </g>
-<g id="2002682400"><polygon points="577,51 877,51 877,119 577,119 "
+<g id="2002719235"><polygon points="42,28 248,28 248,258 42,258 "
 style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
-<tspan x="654" y="66">skos:ConceptScheme (3)</tspan>
+<tspan x="99" y="43">owl:Ontology (4)</tspan>
 </text>
-<line x1="581" y1="69" x2="875" y2="69"
+<line x1="46" y1="46" x2="246" y2="46"
  style="stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="581" y="81">dct:title (9) [1] </tspan>
-<tspan x="581" y="96">rdf:type (9) [*]  -&gt; IRI</tspan>
+<tspan x="46" y="58">dct:created (9) [1] </tspan>
+<tspan x="46" y="73">dct:description (9) [1] D</tspan>
+<tspan x="46" y="88">dct:license (9) [1] D -&gt; IRI</tspan>
+<tspan x="46" y="103">dct:modified (9) [1] </tspan>
+<tspan x="46" y="118">dct:subject (9) [1] D -&gt; IRI</tspan>
+<tspan x="46" y="133">dct:title (9) [1] </tspan>
+<tspan x="46" y="148">owl:imports (10) [1] D -&gt; IRI</tspan>
+<tspan x="46" y="163">owl:priorVersion (1) [1] D -&gt; IRI</tspan>
+<tspan x="46" y="178">owl:versionIRI (9) [1] D -&gt; IRI</tspan>
+<tspan x="46" y="193">owl:versionInfo (10) [1] D</tspan>
+<tspan x="46" y="208">rdf:type (10) [*]  -&gt; IRI</tspan>
+<tspan x="46" y="223">rdfs:comment (1) [1] D</tspan>
+<tspan x="46" y="238">rdfs:isDefinedBy (3) [*] D -&gt; IRI</tspan>
+<tspan x="46" y="253">rdfs:seeAlso (9) [1] D -&gt; IRI</tspan>
 </text>
 </g>
-<g id="2002682389"><polygon points="129,163 429,163 429,393 129,393 "
+<g id="2002719246"><polygon points="42,329 232,329 232,394 42,394 "
 style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
-<tspan x="233" y="178">owl:Ontology (4)</tspan>
+<tspan x="91" y="344">rdf:Property (23)</tspan>
 </text>
-<line x1="133" y1="181" x2="427" y2="181"
+<line x1="46" y1="347" x2="230" y2="347"
  style="stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="133" y="193">dct:created (9) [1] </tspan>
-<tspan x="133" y="208">dct:description (9) [1] D</tspan>
-<tspan x="133" y="223">dct:license (9) [1] D -&gt; IRI</tspan>
-<tspan x="133" y="238">dct:modified (9) [1] </tspan>
-<tspan x="133" y="253">dct:subject (9) [1] D -&gt; IRI</tspan>
-<tspan x="133" y="268">dct:title (9) [1] </tspan>
-<tspan x="133" y="283">owl:imports (10) [1] D -&gt; IRI</tspan>
-<tspan x="133" y="298">owl:priorVersion (1) [1] D -&gt; IRI</tspan>
-<tspan x="133" y="313">owl:versionIRI (9) [1] D -&gt; IRI</tspan>
-<tspan x="133" y="328">owl:versionInfo (10) [1] D</tspan>
-<tspan x="133" y="343">rdf:type (10) [*]  -&gt; IRI</tspan>
-<tspan x="133" y="358">rdfs:comment (1) [1] D</tspan>
-<tspan x="133" y="373">rdfs:isDefinedBy (3) [*] D -&gt; IRI</tspan>
-<tspan x="133" y="388">rdfs:seeAlso (9) [1] D -&gt; IRI</tspan>
+<tspan x="46" y="359">rdf:type (28) [*]  -&gt; IRI</tspan>
+<tspan x="46" y="374">rdfs:label (23) [1] </tspan>
+<tspan x="46" y="389">rdfs:subPropertyOf (2) [1] D -&gt; IRI</tspan>
 </text>
 </g>
-<g id="2002682411"><polygon points="583,175 883,175 883,240 583,240 "
+<g id="2002719257"><polygon points="353,338 562,338 562,418 353,418 "
 style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
-<tspan x="692" y="190">foaf:Person (4)</tspan>
+<tspan x="420" y="353">owl:Class (3)</tspan>
 </text>
-<line x1="587" y1="193" x2="881" y2="193"
+<line x1="357" y1="356" x2="560" y2="356"
  style="stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="587" y="205">foaf:mbox (8) [1] D -&gt; IRI</tspan>
-<tspan x="587" y="220">foaf:name (8) [1] D</tspan>
-<tspan x="587" y="235">rdf:type (8) [*]  -&gt; IRI</tspan>
+<tspan x="357" y="368">owl:unionOf (1) [1] D -&gt; IRI</tspan>
+<tspan x="357" y="383">rdf:type (3) [*]  -&gt; IRI</tspan>
+<tspan x="357" y="398">rdfs:label (2) [1] </tspan>
+<tspan x="357" y="413">&lt;&gt; owl:complementOf  DR</tspan>
 </text>
 </g>
-<g id="2002682367"><polygon points="576,299 876,299 876,364 576,364 "
+<g id="2002719268"><polygon points="343,28 498,28 498,93 343,93 "
 style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
-<tspan x="689" y="314">owl:Class (3)</tspan>
+<tspan x="379" y="43">foaf:Person (4)</tspan>
 </text>
-<line x1="580" y1="317" x2="874" y2="317"
+<line x1="347" y1="46" x2="496" y2="46"
  style="stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="580" y="329">owl:unionOf (1) [1] D -&gt; IRI</tspan>
-<tspan x="580" y="344">rdf:type (3) [*]  -&gt; IRI</tspan>
-<tspan x="580" y="359">rdfs:label (2) [1] </tspan>
+<tspan x="347" y="58">foaf:mbox (8) [1] D -&gt; IRI</tspan>
+<tspan x="347" y="73">foaf:name (8) [1] D</tspan>
+<tspan x="347" y="88">rdf:type (8) [*]  -&gt; IRI</tspan>
 </text>
 </g>
-<g id="2002682356"><polygon points="582,438 882,438 882,503 582,503 "
+<g id="2002719279"><polygon points="320,121 498,121 498,166 320,166 "
 style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
-<tspan x="686" y="453">rdf:Property (23)</tspan>
+<tspan x="333" y="136">owl:AnnotationProperty (5)</tspan>
 </text>
-<line x1="586" y1="456" x2="880" y2="456"
+<line x1="324" y1="139" x2="496" y2="139"
  style="stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="586" y="468">rdf:type (28) [*]  -&gt; IRI</tspan>
-<tspan x="586" y="483">rdfs:label (23) [1] </tspan>
-<tspan x="586" y="498">rdfs:subPropertyOf (2) [1] D -&gt; IRI</tspan>
+<tspan x="324" y="151">rdf:type (6) [*]  -&gt; IRI</tspan>
 </text>
 </g>
-<g id="2002682323"><polygon points="129,454 429,454 429,499 129,499 "
-style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
-<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
-<tspan x="208" y="469">owl:OntologyProperty (4)</tspan>
+<g id="2002719290"><polygon points="511,28 865,28 865,157 511,157 "
+style="fill:White; stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="515" y="42">PREFIX virtrdf: &lt;http://www.openlinksw.com/schemas/virtrdf#&gt;</tspan>
+<tspan x="515" y="57">PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;</tspan>
+<tspan x="515" y="72">PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;</tspan>
+<tspan x="515" y="87">PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;</tspan>
+<tspan x="515" y="102">PREFIX dct: &lt;http://purl.org/dc/terms/&gt;</tspan>
+<tspan x="515" y="117">PREFIX sd: &lt;http://www.w3.org/ns/sparql-service-description#&gt;</tspan>
+<tspan x="515" y="132">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</tspan>
+<tspan x="515" y="147">PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;</tspan>
 </text>
 </g>
-<g id="2002682378"><polygon points="131,553 431,553 431,633 131,633 "
+<g id="2002719301"><polygon points="41,268 252,268 252,318 41,318 "
 style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
-<tspan x="242" y="568">sd:Service (1)</tspan>
+<tspan x="73" y="283">skos:ConceptScheme (3)</tspan>
 </text>
-<line x1="135" y1="571" x2="429" y2="571"
+<line x1="45" y1="286" x2="250" y2="286"
  style="stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="135" y="583">rdf:type (1) [*]  -&gt; IRI</tspan>
-<tspan x="135" y="598">sd:feature (2) [*] D -&gt; IRI</tspan>
-<tspan x="135" y="613">sd:resultFormat (8) [*] D -&gt; IRI</tspan>
-<tspan x="135" y="628">sd:supportedLanguage (1) [1] D -&gt; IRI</tspan>
+<tspan x="45" y="298">dct:title (9) [1] </tspan>
+<tspan x="45" y="313">rdf:type (9) [*]  -&gt; IRI</tspan>
 </text>
 </g>
-<g id="2002682345"><polygon points="596,572 896,572 896,617 596,617 "
+<g id="2002719312"><polygon points="575,339 807,339 807,449 575,449 "
 style="fill:#F4D03F; stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;font-weight:bold;">
-<tspan x="670" y="587">owl:AnnotationProperty (5)</tspan>
+<tspan x="652" y="354">sd:Service (1)</tspan>
 </text>
-<line x1="600" y1="590" x2="894" y2="590"
+<line x1="579" y1="357" x2="805" y2="357"
  style="stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="600" y="602">rdf:type (6) [*]  -&gt; IRI</tspan>
+<tspan x="579" y="369">rdf:type (1) [*]  -&gt; IRI</tspan>
+<tspan x="579" y="384">sd:feature (2) [*] D -&gt; IRI</tspan>
+<tspan x="579" y="399">sd:resultFormat (8) [*] D -&gt; IRI</tspan>
+<tspan x="579" y="414">sd:supportedLanguage (1) [1] D -&gt; IRI</tspan>
+<tspan x="579" y="429">&lt;&gt; sd:endpoint  DR</tspan>
+<tspan x="579" y="444">&lt;&gt; sd:url  DR</tspan>
 </text>
 </g>
-<g id="2002682291"><path d="M729,438 L729,364 "
+<g id="2002719191"><path d="M252,309 L426,309 "
 style="fill:none;stroke-width:1;stroke:Black;"/>
-<line x1="726" y1="370" x2="729" y2="364"
+<line x1="420" y1="306" x2="426" y2="309"
  style="stroke-width:1;stroke:Black;"/>
-<line x1="732" y1="370" x2="729" y2="364"
+<line x1="420" y1="312" x2="426" y2="309"
  style="stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="646" y="419">rdfs:domain  D</tspan>
-<tspan x="646" y="434">rdfs:range  D</tspan>
+<tspan x="256" y="307">skos:hasTopConcept  DR</tspan>
 </text>
 </g>
-<g id="2002682316"><path d="M119,91 L16,91 12,89 10,85 10,27 12,23 16,21 263,21 267,23 269,27 269,44 "
+<g id="2002719196"><path d="M248,56 L343,56 "
 style="fill:none;stroke-width:1;stroke:Black;"/>
-<line x1="266" y1="38" x2="269" y2="44"
+<line x1="337" y1="53" x2="343" y2="56"
  style="stroke-width:1;stroke:Black;"/>
-<line x1="272" y1="38" x2="269" y2="44"
+<line x1="337" y1="59" x2="343" y2="56"
  style="stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="18" y="104">skos:related  D</tspan>
-<tspan x="18" y="119">skos:broader  DR</tspan>
+<tspan x="252" y="54">dct:creator  DR</tspan>
 </text>
 </g>
-<g id="2002682321"><path d="M582,470 L429,470 "
+<g id="2002719201"><path d="M426,277 L252,277 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="258" y1="274" x2="252" y2="277"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="258" y1="280" x2="252" y2="277"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="312" y="290">skos:inScheme  DR</tspan>
+</text>
+</g>
+<g id="2002719206"><path d="M232,366 L353,366 "
+style="fill:none;stroke-width:1;stroke:Black;"/>
+<line x1="347" y1="363" x2="353" y2="366"
+ style="stroke-width:1;stroke:Black;"/>
+<line x1="347" y1="369" x2="353" y2="366"
+ style="stroke-width:1;stroke:Black;"/>
+<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
+<tspan x="236" y="349">rdfs:domain  D</tspan>
+<tspan x="236" y="364">rdfs:range  D</tspan>
+</text>
+</g>
+<g id="2002719211"><path d="M137,394 L137,414 "
 style="fill:none;stroke-width:2;stroke:Fuchsia;"/>
-<polygon points="572,475 582,470 572,465 "
+<polygon points="142,404 137,394 132,404 "
 style="fill:Silver;stroke-width:1;stroke:Black;"/>
 <text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="568" y="483"> </tspan>
-</text>
-</g>
-<g id="2002682306"><path d="M577,70 L419,70 "
-style="fill:none;stroke-width:1;stroke:Black;"/>
-<line x1="425" y1="67" x2="419" y2="70"
- style="stroke-width:1;stroke:Black;"/>
-<line x1="425" y1="73" x2="419" y2="70"
- style="stroke-width:1;stroke:Black;"/>
-<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="431" y="83">skos:hasTopConcept  DR</tspan>
-</text>
-</g>
-<g id="2002682311"><path d="M419,102 L577,102 "
-style="fill:none;stroke-width:1;stroke:Black;"/>
-<line x1="571" y1="99" x2="577" y2="102"
- style="stroke-width:1;stroke:Black;"/>
-<line x1="571" y1="105" x2="577" y2="102"
- style="stroke-width:1;stroke:Black;"/>
-<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="423" y="100">skos:inScheme  DR</tspan>
-</text>
-</g>
-<g id="2002682286"><path d="M429,209 L583,209 "
-style="fill:none;stroke-width:1;stroke:Black;"/>
-<line x1="577" y1="206" x2="583" y2="209"
- style="stroke-width:1;stroke:Black;"/>
-<line x1="577" y1="212" x2="583" y2="209"
- style="stroke-width:1;stroke:Black;"/>
-<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="433" y="207">dct:creator  DR</tspan>
-</text>
-</g>
-<g id="2002682296"><path d="M876,316 L1012,316 1016,314 1018,310 1018,285 1016,281 1012,279 779,279 775,281 773,285 773,299 "
-style="fill:none;stroke-width:1;stroke:Black;"/>
-<line x1="770" y1="293" x2="773" y2="299"
- style="stroke-width:1;stroke:Black;"/>
-<line x1="776" y1="293" x2="773" y2="299"
- style="stroke-width:1;stroke:Black;"/>
-<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="880" y="314">owl:complementOf  DR</tspan>
-</text>
-</g>
-<g id="2002682301"><path d="M131,559 L36,559 32,557 30,553 30,527 32,523 36,521 166,521 170,523 172,527 172,553 "
-style="fill:none;stroke-width:1;stroke:Black;"/>
-<line x1="169" y1="547" x2="172" y2="553"
- style="stroke-width:1;stroke:Black;"/>
-<line x1="175" y1="547" x2="172" y2="553"
- style="stroke-width:1;stroke:Black;"/>
-<text style="font-family:Arial;font-size:12px;kerning:0;word-spacing:-1px;fill:Black;">
-<tspan x="38" y="572">sd:endpoint  DR</tspan>
-<tspan x="38" y="587">sd:url  DR</tspan>
+<tspan x="139" y="409"> </tspan>
 </text>
 </g>
 </svg>

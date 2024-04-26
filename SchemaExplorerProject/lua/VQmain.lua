@@ -133,6 +133,11 @@ end
 function GetSVG()
 	local dd = utilities.active_elements()
 	local diagram = dd:find("/target") 
+	local dgr_caption = diagram:attr('caption')
+	local dgr_capt_list = split_string_with_delimiter(dgr_caption, ' ') 
+	if ( table.getn(dgr_capt_list) == 2 ) then
+		dgr_caption = dgr_capt_list[2]
+	end
 	local path = tda.GetProjectPath() .. "\\Diagrams\\"..diagram:attr('caption')..".svg"
 	local diagram_id = diagram:id()
 	local svg_file_folder_path = path
